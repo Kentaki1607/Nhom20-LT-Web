@@ -1,0 +1,56 @@
+header{
+    background: #fafafa;
+}
+
+
+header .logo{
+    width: 0.1 6rem;
+    margin: 0 auto;
+    display: block;
+}
+
+header .header-1 {
+border-bottom: solid 0.05rem white;
+   padding: auto;
+
+
+    
+}
+header .header-1 .part-1 {
+    display: flex;
+    height: 2.5rem;
+    justify-content: space-between;
+    padding: 0 3.5rem;
+    background: #f27232;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+header .header-1 .part-1 a{
+    color: white;
+    padding: 0 1rem;
+   
+}
+
+header .header-1 .part-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    background: #fafafa;
+    height: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+header .header-1 .part-2 a{
+    padding: 0 0.5rem;
+    display: flex;
+    color: var(--sec-black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .header-1 .part-2 a:hover{
+    text-decoration: none;
+    color: #dc9e58;
+    font-weight: bold;
+}
+
+

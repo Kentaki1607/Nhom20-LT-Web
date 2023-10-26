@@ -1,0 +1,12 @@
+root{
+    --prio-text: #9c9e9c;
+    --sec-black: black;
+    --sec-while: white;
+    --sec-red: rgb(244, 97, 97);
+   
+}
+
+html {
+    font-size: 17.6px;
+}
+
