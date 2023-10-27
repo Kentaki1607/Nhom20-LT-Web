@@ -54,3 +54,58 @@ header .header-1 .part-2 a:hover{
 }
 
 
+
+
+.ImgFeature{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+div.menu{
+    display: block;
+    text-align: center;
+}
+div.menu a{
+    display: inline-block;
+    border: 1px solid #f27232;
+    
+    color:#f27232;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+    padding: 7px 15px;
+    margin: 10px;
+}
+div.menu a:hover{
+    color: #fafafa;
+    background-color: #f27232;
+}
+ul.listProduct{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+ul.listProduct li{
+    border: 1px solid black;
+    float: left;
+    width: 300px;
+    height: auto;
+    margin: 16px;
+}
+ul.listProduct li:hover{
+    z-index: 1;
+    box-shadow: 5px 10px 8px rgb(87, 84, 84);
+    opacity: 0.5;
+}
+.productImg{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.productInfo{
+    font-family: cursive;
+    font-size: large;
+    text-align: center;
+}
