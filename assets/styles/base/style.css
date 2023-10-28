@@ -52,60 +52,79 @@ header .header-1 .part-2 a:hover{
     color: #dc9e58;
     font-weight: bold;
 }
-
-
-
-
-.ImgFeature{
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-div.menu{
-    display: block;
+footer {
+    background: #fafafa; /* Màu nền giống header */
+    padding: 20px;
     text-align: center;
 }
-div.menu a{
+
+.footer-icons {
+    margin: 20px 0;
+}
+
+.footer-icons a {
     display: inline-block;
-    border: 1px solid #f27232;
-    
-    color:#f27232;
-    text-align: center;
+    margin: 0 10px;
+    font-size: 24px;
+    color: var(--sec-black);
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+}
 
-    padding: 7px 15px;
-    margin: 10px;
+.footer-icons a:hover {
+    color: #dc9e58;
 }
-div.menu a:hover{
-    color: #fafafa;
-    background-color: #f27232;
+
+.footer-copyright {
+    font-size: 14px;
+    color: #777;
 }
-ul.listProduct{
-    list-style-type: none;
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Thay đổi kích thước slider theo nhu cầu của bạn */
+    height: 200px; /* Thay đổi kích thước slider theo nhu cầu của bạn */
+}
+
+.slides {
+    display: flex;
+}
+
+.image {
+    flex: 0 0 100%;
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ .slides #img1 {
+    display: block;
+}
+
+input[type="radio"]:checked ~ .slides #img2 {
+    display: block;
+}
+
+input[type="radio"]:checked ~ .slides #img3 {
+    display: block;
+}
+
+input[type="radio"]:checked ~ .slides #img4 {
+    display: block;
+}
+
+label {
+    cursor: pointer;
     display: inline-block;
-    margin: 0;
-    padding: 0;
+    width: 10px;
+    height: 10px;
+    background: #aaa;
+    margin: 0 5px;
+    border-radius: 50%;
 }
-ul.listProduct li{
-    border: 1px solid black;
-    float: left;
-    width: 300px;
-    height: auto;
-    margin: 16px;
+
+input[type="radio"]:checked + label {
+    background: #333;
 }
-ul.listProduct li:hover{
-    z-index: 1;
-    box-shadow: 5px 10px 8px rgb(87, 84, 84);
-    opacity: 0.5;
-}
-.productImg{
-    float: left;
-    width: 100%;
-    height: auto;
-}
-.productInfo{
-    font-family: cursive;
-    font-size: large;
-    text-align: center;
-}
+
