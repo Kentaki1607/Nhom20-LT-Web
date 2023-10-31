@@ -1,5 +1,5 @@
-header{
-    background: #fafafa;
+header, body{
+    background: rgb(239, 239, 239);
 }
 
 
@@ -128,56 +128,99 @@ input[type="radio"]:checked + label {
     background: #333;
 }
 
+
 .ImgFeature{
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
 }
-div.menu{
-    display: block;
-    text-align: center;
+.menu-tags{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
-div.menu a{
-    display: inline-block;
-    border: 1px solid #f27232;
-    
-    color:#f27232;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-
-    padding: 7px 15px;
-    margin: 10px;
+.menu-tag{
+    border-radius: 30px;
+    border: 3px solid #f27232;
+    color: #f27232;
+    padding: 10px;
+    margin-left: 25px;
+    font-size: 14px;
 }
-div.menu a:hover{
+.menu-tag:hover{
     color: #fafafa;
     background-color: #f27232;
 }
-ul.listProduct{
+
+
+ul {
     list-style-type: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
 }
-ul.listProduct li{
-    border: 1px solid black;
-    float: left;
-    width: 300px;
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 65px;
+}
+.products li {
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.products .product-item {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 400px;
+    margin-bottom: 70px;
+}
+.products .product-item:hover {
+    transform: translateY(-20px);
+    box-shadow: 3px 3px 3px #cfcfcf;
+}
+.products li img {
+    max-width: 100%;
     height: auto;
-    margin: 16px;
+    border-radius: 20px;
+    cursor: pointer;
 }
-ul.listProduct li:hover{
-    z-index: 1;
-    box-shadow: 5px 10px 8px rgb(87, 84, 84);
-    opacity: 0.5;
-}
-.productImg{
-    float: left;
-    width: 100%;
-    height: auto;
-}
-.productInfo{
-    font-family: cursive;
-    font-size: large;
+.product-info {
     text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.product-name {
+    font-size: 20px;
+    color: #dc9e58;
+}
+.products .product-item:hover .product-name {
+    text-decoration: underline;
+}
+.product-price {
+    padding: 10px;
+    text-align: center;
+}
+.pagination-box{
+    position: relative;
+}
+div.pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pagination a {
+    float: left;
+    padding: 8px 16px;
+    margin: 0 2px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.pagination a.active {
+    color: white;
+    background-color: #f27232;
+}
+.pagination a:hover:not(.active) {
+    background-color: rgb(185, 233, 226);
 }
