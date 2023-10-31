@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 header {
     background: #fafafa;
+=======
+header, body{
+    background: rgb(239, 239, 239);
+>>>>>>> 722f1d78ddc125b56c420b521c58261797c34b4f
 }
 
 header .logo {
@@ -52,11 +57,87 @@ header .header-1 .part-2 a:hover {
     font-weight: bold;
     transition: all 0.9s ease-in-out;
 }
+footer {
+    background: #fafafa; /* Màu nền giống header */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-icons {
+    margin: 20px 0;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: var(--sec-black);
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    color: #dc9e58;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #777;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Thay đổi kích thước slider theo nhu cầu của bạn */
+    height: 200px; /* Thay đổi kích thước slider theo nhu cầu của bạn */
+}
+
+.slides {
+    display: flex;
+}
+
+.image {
+    flex: 0 0 100%;
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ .slides #img1 {
+    display: block;
+}
+
+input[type="radio"]:checked ~ .slides #img2 {
+    display: block;
+}
+
+input[type="radio"]:checked ~ .slides #img3 {
+    display: block;
+}
+
+input[type="radio"]:checked ~ .slides #img4 {
+    display: block;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #aaa;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked + label {
+    background: #333;
+}
 
 .header-1 .part-2 ul li {
     position: relative;
 }
 
+<<<<<<< HEAD
 /* Tạo sub-menu cho My Account  */
 .sub-menu {
     position: absolute;
@@ -263,12 +344,19 @@ ul.listProduct li:hover{
 /* =========================================================
              CSS Home.html
   =========================================================             */
+=======
+.ImgFeature{
+    width: 100%;
+    height: auto;
+}
+>>>>>>> 722f1d78ddc125b56c420b521c58261797c34b4f
 .menu-tags{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 .menu-tag{
+<<<<<<< HEAD
     display: inline-block;
     border: 1px solid #f27232;
     
@@ -279,15 +367,32 @@ ul.listProduct li:hover{
 
     padding: 7px 15px;
     margin: 10px;
+=======
+    border-radius: 30px;
+    border: 3px solid #f27232;
+    color: #f27232;
+    padding: 10px;
+    margin-left: 25px;
+    font-size: 14px;
+>>>>>>> 722f1d78ddc125b56c420b521c58261797c34b4f
 }
 .menu-tag:hover{
     color: #fafafa;
     background-color: #f27232;
 }
+<<<<<<< HEAD
 ul {
     list-style-type: none;
 }
     .products {
+=======
+
+
+ul {
+    list-style-type: none;
+}
+.products {
+>>>>>>> 722f1d78ddc125b56c420b521c58261797c34b4f
     display: flex;
     flex-wrap: wrap;
     padding: 30px 65px;
@@ -356,6 +461,7 @@ div.pagination {
 .pagination a:hover:not(.active) {
     background-color: rgb(185, 233, 226);
 }
+<<<<<<< HEAD
 /* =========================================================
             End CSS Home.html
   =========================================================             */
@@ -394,3 +500,5 @@ footer {
 /* =========================================================
              End Footer
   =========================================================             */
+=======
+>>>>>>> 722f1d78ddc125b56c420b521c58261797c34b4f
