@@ -1,21 +1,18 @@
-header{
+header {
     background: #fafafa;
 }
 
-
-header .logo{
-    width: 0.1 6rem;
+header .logo {
+    width: 16rem;
     margin: 0 auto;
     display: block;
 }
 
 header .header-1 {
-border-bottom: solid 0.05rem white;
-   padding: auto;
-
-
-    
+    border-bottom: solid 0.05rem white;
+    padding: auto;
 }
+
 header .header-1 .part-1 {
     display: flex;
     height: 2.5rem;
@@ -25,13 +22,13 @@ header .header-1 .part-1 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-header .header-1 .part-1 a{
+
+header .header-1 .part-1 a {
     color: white;
     padding: 0 1rem;
-   
 }
 
-header .header-1 .part-2{
+header .header-1 .part-2 {
     display: flex;
     justify-content: space-between;
     padding: 0 3rem;
@@ -41,16 +38,359 @@ header .header-1 .part-2{
     padding-bottom: 0.5rem;
 }
 
-header .header-1 .part-2 a{
+header .header-1 .part-2 a {
     padding: 0 0.5rem;
     display: flex;
     color: var(--sec-black);
     font-family: Arial, Helvetica, sans-serif;
 }
-header .header-1 .part-2 a:hover{
+
+header .header-1 .part-2 a:hover {
     text-decoration: none;
     color: #dc9e58;
+    font-size: inherit;
     font-weight: bold;
+    transition: all 0.9s ease-in-out;
 }
 
+.header-1 .part-2 ul li {
+    position: relative;
+}
 
+/* Tạo sub-menu cho My Account  */
+.sub-menu {
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    display: none;
+    z-index: 1; 
+}
+
+.sub-menu ul {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.sub-menu ul li {
+    padding: 6px 0;
+}
+
+.sub-menu ul li a {
+    color: black;
+}
+
+.sub-menu ul li:hover {
+    background: none;
+}
+.my-account ul li a:hover .sub-menu{
+    display: block;
+}  
+
+/* End CSS header  */
+
+
+/* Section 1 cho main  */
+main .sec-1 .slider .img-1{
+    background-image: url('./Slider-1.webp');
+}
+main .sec-1 .slider .img-2{
+    background-image: url('./Slider-2.webp');
+}
+main .sec-1 .slider .img-3{
+    background-image: url('./Slider-3.webp');
+}
+main .sec-1 .css-img-sec-1 {
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+}
+
+main .sec-1 .slick-prev::before {
+    content: '\3c';
+    font-family: "Font Awesome 6 Free";
+    font: var(--fa-solid fa-less-than);
+    display: inline-block;
+    background-color: rgba(226, 224, 224, 0.5);
+    height: 5rem;
+    width: 5rem;
+    color: black;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding-top: 1rem;
+    text-align: center;
+}
+main .sec-1 .slick-prev{
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    padding: 0;
+    position: absolute;
+    top: calc(50%);
+    left: 0.5rem;
+    z-index: 10;
+}
+main .sec-1 .slick-next::before{
+    content: '\3e';
+        font-family: "Font Awesome 6 Free";
+        font: var(--fa-solid fa-less-than);
+        display: inline-block;
+        background-color: rgba(226, 224, 224, 0.5);
+        height: 5rem;
+        width: 5rem;
+        color: black;
+        font-size: 3rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        padding-top: 1rem;
+        text-align: center;
+}
+    main .sec-1 .slick-next{
+        display: block;
+        height: 5rem;
+        width: 5rem;
+        padding: 0;
+        position: absolute;
+        top: calc(50%);
+        right: 1rem;
+        z-index: 10;
+    }
+    main .sec-1 .slick-dots{
+        background-color: black;
+        padding: 0.3rem 0;
+    }
+
+    .slider {
+        position: relative;
+    }
+
+    .slider-content img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    /* chưa tạo đc border cho h1 và p =>(cần trợ giúp) */
+    .slider-content{
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; 
+        color: #fafafa;
+        background: rgba(0, 0, 0, 0.5); /* Nền mờ để tạo sự đối比 cho chữ */
+        padding: 0; /* Khoảng cách giữa chữ và viền nền */
+        border: 5px solid #555;
+        box-shadow: 0 0 20px rgba(75, 63, 63, 0.3);
+
+      }
+    .slide-content h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+
+      .slide-content p {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      }
+
+/* End Sec-1  */
+/* =========================================================
+             CSS index.html
+  =========================================================             */
+div.menu{
+    display: block;
+    text-align: center;
+}
+div.menu a{
+    display: inline-block;
+    border: 1px solid #f27232;
+    
+    color:#f27232;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+    padding: 7px 15px;
+    margin: 10px;
+}
+div.menu a:hover{
+    color: #fafafa;
+    background-color: #f27232;
+}
+ul.listProduct{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+ul.listProduct li{
+    border: 1px solid black;
+    float: left;
+    width: 300px;
+    height: auto;
+    margin: 16px;
+}
+ul.listProduct li:hover{
+    z-index: 1;
+    box-shadow: 5px 10px 8px rgb(87, 84, 84);
+    opacity: 0.5;
+}
+.productImg{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.productInfo{
+    font-family: cursive;
+    font-size: large;
+    text-align: center;
+}
+/* =========================================================
+             End CSS index.html
+  =========================================================             */
+ 
+
+
+/* =========================================================
+             CSS Home.html
+  =========================================================             */
+.menu-tags{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.menu-tag{
+    display: inline-block;
+    border: 1px solid #f27232;
+    
+    color:#f27232;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+    padding: 7px 15px;
+    margin: 10px;
+}
+.menu-tag:hover{
+    color: #fafafa;
+    background-color: #f27232;
+}
+ul {
+    list-style-type: none;
+}
+    .products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 65px;
+}
+.products li {
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.products .product-item {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 400px;
+    margin-bottom: 70px;
+}
+.products .product-item:hover {
+    transform: translateY(-20px);
+    box-shadow: 3px 3px 3px #cfcfcf;
+}
+.products li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.product-info {
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.product-name {
+    font-size: 20px;
+    color: #dc9e58;
+}
+.products .product-item:hover .product-name {
+    text-decoration: underline;
+}
+.product-price {
+    padding: 10px;
+    text-align: center;
+}
+.pagination-box{
+    position: relative;
+}
+div.pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pagination a {
+    float: left;
+    padding: 8px 16px;
+    margin: 0 2px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.pagination a.active {
+    color: white;
+    background-color: #f27232;
+}
+.pagination a:hover:not(.active) {
+    background-color: rgb(185, 233, 226);
+}
+/* =========================================================
+            End CSS Home.html
+  =========================================================             */
+
+
+
+    
+/* =========================================================
+            Footer CSS 
+  =========================================================             */
+footer {
+    background: #fafafa; /* Màu nền giống header */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-icons {
+    margin: 20px 0;
+}
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: var(--sec-black);
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    color: #dc9e58;
+}
+.footer-copyright {
+    font-size: 14px;
+    color: #777;
+}
+
+/* =========================================================
+             End Footer
+  =========================================================             */
