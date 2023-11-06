@@ -386,9 +386,40 @@ div.pagination {
   =========================================================             */
 footer {
     background: #fafafa; /* Màu nền giống header */
-    padding: 20px;
+    padding: 5rem;
     text-align: center;
 }
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ddd;
+   
+}
+
+nav .main-footer-1{
+    /* border: solid 1px #ddd; */
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    height: 100%;
+    box-sizing: border-box; /* Giữ cho padding không tăng kích thước */
+   
+}
+
+nav .main-footer-1 p{
+    text-align: left;
+    color: #818181;
+}
+
+nav .main-footer-1 a .user-icon{
+    width: 2rem;
+    height: 2rem;
+    border-radius:50%;
+    padding-left: 8px;
+    border: solid 1px #ddd;
+  
+}
+
 
 .footer-icons {
     margin: 20px 0;
