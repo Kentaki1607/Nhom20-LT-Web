@@ -43,6 +43,7 @@ header .header-1 .part-2 {
 
 header .header-1 .part-2 a {
     padding: 0 0.5rem;
+    margin: 0 1rem;
     display: flex;
     color: var(--sec-black);
     font-family: Arial, Helvetica, sans-serif;
@@ -60,6 +61,22 @@ header .header-1 .part-2 a:hover {
     position: relative;
 }
 
+* {box-sizing: border-box;}
+ 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-container button {
+    box-sizing: content-box;
+    color: lightsalmon;
+    border-color: lightsalmon;
+}
+.search-container button:hover {
+    color: white;
+    background-color: lightsalmon;
+}
 /* Tạo sub-menu cho My Account  */
 .sub-menu {
     position: absolute;
@@ -209,11 +226,14 @@ main .sec-1 .slick-next::before{
 /* =========================================================
              CSS index.html
   =========================================================             */
+.text-center {
+    text-align: center;
+}
 div.menu{
     display: block;
     text-align: center;
 }
-div.menu a{
+div.menu a:not(.menu-active){
     display: inline-block;
     border: 1px solid #f27232;
     
@@ -225,7 +245,11 @@ div.menu a{
     padding: 7px 15px;
     margin: 10px;
 }
-div.menu a:hover{
+.menu-active {
+    color: #fafafa;
+    background-color: #f27232;
+}
+div.menu a:hover:not(.menu-active) {
     color: #fafafa;
     background-color: #f27232;
 }
@@ -276,6 +300,12 @@ ul.listProduct li:hover{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+.menu-filter{
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    margin: 10px;
 }
 .menu-tag{
 
