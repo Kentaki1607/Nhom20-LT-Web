@@ -1,0 +1,131 @@
+main{
+    border-top: 1px solid #ddd ;
+    background:#fff9f9;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+main .form{
+    margin: 0 5rem;
+    width: 20rem;
+    padding: 5rem 0;
+}
+
+main .form .login-form ,.signup-form{
+    width: 100%;
+}   
+
+main .form .wrap{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    z-index: 0; 
+}
+
+
+main .form .inner-wrap{
+    padding: 0.8rem 0.5rem;
+}
+input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgb(222, 204, 203);
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 0.1rem 0.1rem rgb(81, 72, 72);
+    border: 0.1rem solid rgb(63, 56, 56);
+}
+
+main form{
+    background-color: #f9ebeb;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.3rem 0.3rem rgb(178, 157, 157);
+}
+
+
+
+main .form .btn-login, .btn-signup{
+    margin: 0 auto;
+    display: block;
+    border: none;
+    background-color: rgb(235, 177, 141);
+    /* cta: call to action  */
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.35rem;
+    font-size: 1.2rem;
+    /* 500-700: đậm vừa  */
+    font-weight: 600;
+    z-index: 5;
+    /* background: transparent; */
+    transition: all .5s ease-in-out;
+}
+main .form .relative{
+    display: inline-block;
+}
+
+main .form .btn-login:hover{
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+}
+main .form .btn-signup:hover{
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+}
+main .form .btn-login:hover{
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+}
+main .form .icon-login{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+   
+}
+
+main .form .title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(207, 202, 205);
+}
+
+/* .login-form{
+    display: none;
+}
+.signup-form {
+    display: block;
+}
+.login-form{
+    display: block;
+}
+.signup-form {
+    display: none;
+} 
+*/
+.form-conclusion {
+    padding-top: 5rem;
+}
+.form-conclusion .search{
+    background-color: #fafafa !important;
+    border: 0.01rem;
+}
+
+.form-conclusion .coclusion{
+    text-align: center;
+}
+.form-conclusion .coclusion ul li{
+    font-size: 20px;
+    color: rgb(121, 117, 117);
+    padding: 0.4rem 0;
+}
+
+.form-conclusion .coclusion ul li:hover{
+    color: rgb(237, 130, 130);
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-3%);
+    transform: translateX(3%);
+}
+
+
+

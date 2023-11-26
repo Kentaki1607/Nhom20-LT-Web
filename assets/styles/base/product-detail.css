@@ -264,6 +264,7 @@ img {
     background: #ff9f1a;
     padding: 1.2em 1.5em;
     border: none;
+    border-radius: 0.2rem;
     text-transform: UPPERCASE;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
