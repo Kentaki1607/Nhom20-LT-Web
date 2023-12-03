@@ -1,3 +1,4 @@
+
 header {
     background: #fafafa;
 }
@@ -296,10 +297,6 @@ div.example i:hover {
  
 
 
-/* =========================================================
-             CSS Home.html
-  =========================================================             */
-
 .menu-box{
     display: flex;
     justify-content: center;
@@ -394,6 +391,7 @@ ul {
 }
 .pagination-box{
     position: relative;
+    padding-bottom: 2.5rem;
 }
 div.pagination {
     position: absolute;
@@ -416,25 +414,17 @@ div.pagination {
 .pagination a:hover:not(.active) {
     background-color: rgb(185, 233, 226);
 }
-    
-/* =========================================================
-            Footer CSS 
-  =========================================================             */
-footer {
-    background: #fafafa; /* Màu nền giống header */
-    padding: 5rem;
-    text-align: center;
-}
+
 .main-footer{
     display: flex;
     width: 100%;
+    padding-top: 20px;
     justify-content: space-around;
     border-bottom: 1px solid #ddd;
    
 }
 
 nav .main-footer-1{
-    /* border: solid 1px #ddd; */
     flex: 1;
     text-align: center;
     padding: 2rem;
@@ -456,11 +446,58 @@ nav .main-footer-1 a .user-icon{
     border: solid 1px #ddd;
   
 }
+    
+/* =========================================================
+            Footer CSS 
+  =========================================================             */
+  footer {
+    background-color: #f27232;
+    padding: 1.5rem;
+    text-align: center;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.1rem;
+    
+    
+}
+.information div{
+   flex-basis: 33%;  
+   color: #d2cbcb ;
+   font-size: 20px;
+   border-bottom :1px solid #ddd ;
 
+}
+
+.information div:hover{
+    flex-basis: 33%;  
+    color: #fef9f9;
+    
+ }
+ .information div p{
+    font-size: 16px;
+    text-align: left;
+    color: #271f1f;
+   
+ }
+.information div li{
+    font-size: 16px;
+    text-align:center;
+    color: #271f1f;
+    list-style-type: none;
+ }
+
+ .information div li:hover{
+    transform: translateX(-5px);
+    transform: translateX(5px);
+    transition: all .3s ease-in-out;
+ }
 .footer-copyright {
     font-size: 14px;
-    color: #777;
+    color: #d2cbcb;
 }
+
 
 /* =========================================================
              End Footer
