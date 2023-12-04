@@ -1,6 +1,6 @@
 # Nhom20-LT-Web
 Nhóm làm đồ án môn Lập trình Web và Ứng dụng
-
+Tên đồ án: Website Sách
 Danh sách thành viên:
 1. 3122410351 - Nguyễn Hoàng Quyên
 2. 3122410335 - Trần Yến Phượng
