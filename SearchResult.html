@@ -49,6 +49,7 @@
     <!-- End Header  -->
     <main style="display: flex">
         <section class="" style="flex-basis: 75%">
+<<<<<<< HEAD
         <h1 style="text-align: center; margin-top: 30px;">Ket qua tim kiem</h1>
         <div class="menu-box">
             <a class="menu active" href="#All">All</a>
@@ -62,6 +63,14 @@
                 <div class="product-item">
                     <div>
                         <a href="product-detail.html">
+=======
+        <h2 style="text-align: center; margin-top: 30px;color: #1a1212">Kết quả tìm kiếm</h2>
+        <ul  id="content" class="products">
+            <li>
+                <div class="product-item">
+                    <div>
+                        <a href="./product-detail.html">
+>>>>>>> 82c40e826aa71918786e0cd651b81f6d96c639fb
                             <img src="" alt="">
                         </a>
                     </div>
@@ -76,8 +85,13 @@
         <section class="form-conclusion">
             <div class="in-wrap">
                 <div class="example" >
+<<<<<<< HEAD
                     <input class="search" type="text" placeholder="Tìm Kiếm..." name="tìm kiếm">
                     <a href="./SearchResult.html"><i class="fa fa-search"></i></a>
+=======
+                    <input id="searchInput" class="search" type="text" placeholder="Tìm Kiếm..." name="tìm kiếm">
+                    <a href="#"><i id="searchButton" class="fa fa-search"></i></a>
+>>>>>>> 82c40e826aa71918786e0cd651b81f6d96c639fb
                 </div>
                 <div class="coclusion">
                     <div>
@@ -99,6 +113,7 @@
             </div>
         </section>
     </main>
+<<<<<<< HEAD
     <!--
     <div class="pagination-box">
         <div class="pagination">
@@ -118,6 +133,8 @@
         </div>
     </div>
     </div>
+=======
+>>>>>>> 82c40e826aa71918786e0cd651b81f6d96c639fb
         <!-- Start Footer  -->
         <footer>
             <div class="in-wrap">
@@ -139,6 +156,26 @@
     </footer>
     <!-- End Footer -->
 
+    <script>
+        // Đợi tải xong DOM
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lấy đối tượng nút tìm kiếm và ô nhập liệu
+            var searchButton = document.getElementById('searchButton');
+            var searchInput = document.getElementById('searchInput');
+    
+            // Thêm sự kiện click vào nút tìm kiếm
+            searchButton.addEventListener('click', function () {
+                // Lấy giá trị từ ô nhập liệu
+                var searchTerm = searchInput.value.trim();
+    
+                // Kiểm tra xem ô nhập liệu có giá trị hay không
+                if (searchTerm !== '') {
+                    // Thực hiện tìm kiếm và chuyển hướng đến trang kết quả
+                    window.location.href = './SearchResult.html?query=' + encodeURIComponent(searchTerm);
+                }
+            });
+        });
+    </script>
     <script>
         $('.slider').slick({
             // biến toàn cục

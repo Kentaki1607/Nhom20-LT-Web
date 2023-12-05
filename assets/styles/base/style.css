@@ -379,9 +379,10 @@ ul {
     width: auto;
 }
 .product-info:hover a{
-    color: #643a3a;
-    font-weight: 500;
+    color: #ba4040;
+    font-weight: 600;
 }
+
 .product-name {
     font-size: 20px;
     color: #dc9e58;
@@ -390,9 +391,16 @@ ul {
     text-decoration: none;
 }
 .product-price {
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem;
     display: flex;
     text-align: center;
+}
+
+.cart-product{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #dc9e58;
+    border-radius: 0.3rem;
 }
 .pagination-box{
     position: relative;
