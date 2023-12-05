@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const contentElement = document.getElementById('content');
     const paginationElement = document.querySelector('.pagination');
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
 
     const data = [
         {
@@ -35,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         {
             image: "./assets/images/bacthay.webp",
-            name: ">Những bậc thầy đầu tư",
+            name: "Những bậc thầy đầu tư",
             price: "160.000đ",
         },
 
@@ -154,10 +156,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const itemsPerPage = 12;
     let currentPage = 1;
 
-    function displayProducts(page) {
+    function displayProducts(page, searchTerm) {
         const startIndex = (page - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
-        const productsToShow = data.slice(startIndex, endIndex);
+        const filteredData = data.filter(product =>
+            product.name.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+
+        const productsToShow = filteredData.slice(startIndex, endIndex);
 
         contentElement.innerHTML = '';
 
@@ -201,14 +207,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentPage = parseInt(event.target.textContent);
             }
 
-            displayProducts(currentPage);
+            displayProducts(currentPage, searchInput.value);
         }
     }
 
-    paginationElement.addEventListener('click', handlePaginationClick);
+    function handleSearch() {
+        currentPage = 1;
+        displayProducts(currentPage, searchInput.value);
+    }
 
+    paginationElement.addEventListener('click', handlePaginationClick);
+    searchButton.addEventListener('click', handleSearch);
     // Hiển thị sản phẩm trang đầu tiên khi trang web được tải
-    displayProducts(currentPage);
+    displayProducts(currentPage, '');
 
     // Tạo nút phân trang
     const totalPages = Math.ceil(data.length / itemsPerPage);
