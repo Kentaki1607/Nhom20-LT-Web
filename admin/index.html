@@ -2,58 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin's Area</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login</title>
+    <style>
+        main{
+            border-top: 1px solid #ddd ;
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            justify-content: center;
+        }
+        main .form{
+            margin: 0 5rem;
+            width: 20rem;
+            padding: 5rem 0;
+        }
+        
+        main .form .login-form {
+            width: 80%;
+        }   
+        
+        main .form .wrap{
+            width: 100%;
+            margin-bottom: 1rem;
+            z-index: 0; 
+        }
+        
+        
+        main .form .inner-wrap{
+            padding: 0.8rem 0.5rem;
+        }
+        input{
+            display: block;
+            width: 90%;
+            border: none;
+            background-color: rgb(119, 113, 113);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            box-shadow: 0 0 0.1rem 0.1rem rgb(81, 72, 72);
+            border: 0.1rem solid rgb(63, 56, 56);
+            text-align: center;
+        }
+        
+        main form{
+            background-color: #1d1b1b;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-radius: 0.3rem;
+            box-shadow: 0 0 0.3rem 0.3rem rgb(146, 130, 130);
+        }
+        
+        
+        
+        main .form .btn-login a{
+            margin: 0 auto;
+            display: block;
+            text-decoration: none;
+            color: rgb(107, 113, 120);
+            border: none;
+            background-color: rgb(56, 54, 53);
+            /* cta: call to action  */
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.35rem;
+            font-size: 1.2rem;
+            /* 500-700: đậm vừa  */
+            font-weight: 600;
+            z-index: 5;
+            /* background: transparent; */
+            transition: all .5s ease-in-out;
+        }
+         main .form .relative{
+            display: inline-block;
+            background-color: rgb(56, 54, 53);
+            border-radius: 0.35rem;
+        }  
+        
+        main .form .btn-login :hover{
+            background-color: transparent;
+            transition: all .5s ease-in-out;
+            color: #ddd;
+
+        }
+        main .form .title{
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(207, 202, 205);
+        }
+    </style>
 </head>
 <body>
-<!--Start Header-->
-<header>
-    
-</header>
-<!--End Header-->
-
-<!--Start Main-->
-<div class="admin-wrapper">
-
-    <!--Start Menu Bar-->
-    <div class="navigation">
-        <ul>
-            <li>
-                <a href="index.html">
-                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-                    <span class="title">Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="Products.html">
-                    <span class="icon"><i class="fa fa-archive" aria-hidden="true"></i></span>
-                    <span class="title">Product</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
-                    <span class="title">Users</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
-                    <span class="title">Log out</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!--End Menu Bar-->
-
-    <!--Start Main Content-->
-
-    <!--End Main Content-->
-
-</div>
-<!--End Main-->
+    <main>
+        <section class="form container">
+            <form class="login-form" id="login">
+                <p class="title"><span style="font-size: 11px; color: #d8cfcf">Vui lòng đăng nhập tài khoản quản trị viên của bạn</span><br> Admin</p>
+                <div class="overflow-hidden inner-wrap">
+                    <div class="wrap-username wrap relative">
+                        <input type="text" placeholder="Username" name="username">
+                    </div>
+                </div>
+                <div class="overflow-hidden inner-wrap">
+                    <div class="wrap-password wrap relative">
+                        <input type="password" placeholder="Password" name="password">
+                    </div>
+                </div>
+                <div class="wrap-btn flex justify-center">
+                    <div class="relative overflow-hidden">
+                        <button class="btn-login relative" type="submit">
+                           <a href="./Admin.html">Login</a>
+                        </button>
+                    </div>
+                </div>
+            </form>   
+        </section>
+    </main>
 </body>
 </html>

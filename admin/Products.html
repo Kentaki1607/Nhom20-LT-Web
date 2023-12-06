@@ -22,9 +22,10 @@
     <div class="navigation">
         <ul>
             <li>
-                <a href="index.html">
-                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-                    <span class="title">Home</span>
+                <a href="#">
+                    <span class="icon"><img src="assets/images/Peroro.png" alt="account" class="round-img"></span>
+                    <span class="title">Admin</span>
+                    <span class="icon" style="text-align: start;"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                 </a>
             </li>
             <li>
@@ -40,7 +41,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="index.html">
                     <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
                     <span class="title">Log out</span>
                 </a>
@@ -51,8 +52,9 @@
 
     <!--Start Main Content-->
     <div class="admin-content">
-        <div class="button-add">
+        <div class="button-group">
             <a class="button" href="create.html">Add Product</a>
+            <a class="button" href="Products.html">Manage Products</a>
         </div>
         <div class="content">
             <h2 class="page-title">Manage Products</h2>
@@ -60,231 +62,238 @@
                 <thead>
                     <th>SN</th>
                     <th colspan="2">Title</th>
-                    <th>Price</th>
                     <th>Author</th>
+                    <th>Price</th>
                     <th colspan="2">Action</th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td><img src="assets/images/ngamhoa.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/ngamhoa.webp" alt="ngamhoa" class="round-img"></td>
                         <td>Ra bờ suối ngắm hoa kèn hồng</td>
                         <td>Nguyễn Nhật Ánh</td>
                         <td>170.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><img src="assets/images/muahe.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/muahe.webp" alt="muahe" class="round-img"></td>
                         <td>Mùa hè không tên</td>
                         <td>Nguyễn Nhật Ánh</td>
                         <td>120.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td><img src="assets/images/tuduy.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/tuduy.webp" alt="tuduy" class="round-img"></td>
                         <td>Tư duy chiến lược</td>
                         <td>Nhiều tác giả</td>
                         <td>180.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td><img src="assets/images/daiviet.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/daiviet.webp" alt="daiviet" class="round-img"></td>
                         <td>Đại Việt sử kí toàn thư</td>
                         <td>Nhiều tác giả</td>
                         <td>250.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td><img src="assets/images/tienganh.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/tienganh.webp" alt="tienganh" class="round-img"></td>
                         <td>Nghiền từ vựng tiếng anh</td>
                         <td>Nhiều tác giả</td>
                         <td>310.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td><img src="assets/images/bacthay.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/bacthay.webp" alt="bacthay" class="round-img"></td>
                         <td>Những bậc thầy đầu tư</td>
                         <td>Nhiều tác giả</td>
                         <td>160.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td><img src="assets/images/kinh.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/kinh.webp" alt="kinh" class="round-img"></td>
                         <td>Kinh dịch</td>
                         <td>Ngô Tất Tố</td>
                         <td>150.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>8</td>
-                        <td><img src="assets/images/leancode.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/leancode.webp" alt="leancode" class="round-img"></td>
                         <td>Lean Code</td>
                         <td>Nguyễn Văn Trung</td>
                         <td>120.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>9</td>
-                        <td><img src="assets/images/toathanh.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/toathanh.webp" alt="toathanh" class="round-img"></td>
                         <td>Nỗi nhớ anh hóa một tòa thành</td>
                         <td>Quân Tử Dĩ Trạch</td>
                         <td>120.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td><img src="assets/images/tetlang.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/tetlang.webp" alt="tetlang" class="round-img"></td>
                         <td>Tết ở làng địa ngục</td>
                         <td>Thao Trang</td>
                         <td>210.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td><img src="assets/images/qtrog.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/qtrog.webp" alt="qtrog" class="round-img"></td>
                         <td>Điều quan trọng nhất</td>
                         <td>Howard Marks</td>
                         <td>110.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>12</td>
-                        <td><img src="assets/images/kinhtehoc.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/kinhtehoc.webp" alt="kinhtehoc" class="round-img"></td>
                         <td>Kinh tế học cơ bản</td>
                         <td>Thomas Sowell</td>
                         <td>120.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>13</td>
-                        <td><img src="assets/images/quantrivon.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/quantrivon.webp" alt="quantrivon" class="round-img"></td>
                         <td>Phương pháp quản trị vốn</td>
                         <td>Bennett A. McDowell</td>
                         <td>220.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>14</td>
-                        <td><img src="assets/images/kiemtien.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/kiemtien.webp" alt="kiemtien" class="round-img"></td>
                         <td>Kiếm tiền hàng ngày</td>
                         <td>Adrew Aziz</td>
                         <td>140.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>15</td>
-                        <td><img src="assets/images/vutru.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/vutru.webp" alt="vutru" class="round-img"></td>
                         <td>Hợp nhất với vũ trụ</td>
                         <td>Eckhart Tolle</td>
                         <td>130.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>16</td>
-                        <td><img src="assets/images/kientao.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/kientao.webp" alt="kientao" class="round-img"></td>
                         <td>Kiến tạo gia đình hạnh phúc</td>
                         <td>Tuệ An</td>
                         <td>160.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>17</td>
-                        <td><img src="assets/images/chinhphuc.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/chinhphuc.webp" alt="chinhphuc" class="round-img"></td>
                         <td>Chinh phục hạnh phúc</td>
                         <td>Tuệ An</td>
                         <td>230.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>18</td>
-                        <td><img src="assets/images/giauco.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/giauco.webp" alt="giauco" class="round-img"></td>
                         <td>Người giàu có nhất thành BaByLon</td>
                         <td>George S Clason</td>
                         <td>90.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>19</td>
-                        <td><img src="assets/images/miendich.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/miendich.webp" alt="miendich" class="round-img"></td>
                         <td>Miễn dịch</td>
                         <td>Philipp Dettmer</td>
                         <td>140.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>20</td>
-                        <td><img src="assets/images/nhansinh.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/nhansinh.webp" alt="nhansinh" class="round-img"></td>
                         <td>Muôn kiếp nhân sinh</td>
                         <td>Nguyên Phong</td>
                         <td>260.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>21</td>
-                        <td><img src="assets/images/vantinh.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/vantinh.webp" alt="vantinh" class="round-img"></td>
                         <td>Một Đời Được Mất</td>
                         <td>Vãn Tình</td>
                         <td>80.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>22</td>
-                        <td><img src="assets/images/chienthang.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/chienthang.webp" alt="chienthang" class="round-img"></td>
                         <td>Chiến thắng con quỷ trong bạn</td>
                         <td>Napoleon Hill</td>
                         <td>280.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>23</td>
-                        <td><img src="assets/images/phapy.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/phapy.webp" alt="phapy" class="round-img"></td>
                         <td>Ghi chép pháp y</td>
                         <td>Lưu Hiểu Huy</td>
                         <td>170.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                     <tr>
                         <td>24</td>
-                        <td><img src="assets/images/tinhdep.webp" alt="ngamhoa"></td>
+                        <td><img src="assets/images/tinhdep.webp" alt="tinhdep" class="round-img"></td>
                         <td>Lời hay tình đẹp</td>
                         <td>Miêu Mễ Á</td>
                         <td>120.000đ</td>
-                        <td><a href="#" class="edit">Edit</a></td>
-                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><input type="button" onclick="SomeDeleteRowFunction(this)" value="Delete"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+    <script>
+        function SomeDeleteRowFunction(o) {
+         //no clue what to put here?
+         var p=o.parentNode.parentNode;
+             p.parentNode.removeChild(p);
+        }
+    </script>
     <!--End Main Content-->
 
 </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Section - Manage Products</title>
+    <title>Add Product</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -22,9 +22,10 @@
     <div class="navigation">
         <ul>
             <li>
-                <a href="index.html">
-                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-                    <span class="title">Home</span>
+                <a href="#">
+                    <span class="icon"><img src="assets/images/Peroro.png" alt="account" class="round-img"></span>
+                    <span class="title">Admin</span>
+                    <span class="icon" style="text-align: start;"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                 </a>
             </li>
             <li>
@@ -51,26 +52,33 @@
 
     <!--Start Main Content-->
     <div class="admin-content">
+        <div class="button-manage">
+            <a class="button" href="Products.html">Manage Products</a>
+        </div>
         <div class="content">
-            <h2 class="page-title">Manage Product</h2>
-            <form action="create.html" method="post">
-                <div>
-                    <label>Title</label><br>
-                    <input type="text" name="title" class="text-input">
-                </div>
-                <div>
+            <h2 class="page-title">Add Product</h2>
+            <form action="Products.html" method="post">
+                <div class="block-input">
                     <label for="img">Image:</label>
                     <input type="file" id="img" name="img" accept="image/*">
                 </div>
-                <div>
+                <div class="block-input">
+                    <label>Title</label><br>
+                    <input type="text" name="title" class="text-input">
+                </div>
+                <div class="block-input">
+                    <label>Author</label><br>
+                    <input type="text" name="author" class="text-input">
+                </div>
+                <div class="block-input">
                     <label>Price</label><br>
                     <input type="text" name="price" class="text-input">
                 </div>
-                <div>
+                <div class="block-input">
                     <label>Body</label><br>
                     <textarea name="body" class="text-body"></textarea>
                 </div>
-                <div>
+                <div class="block-input">
                     <label>Topic</label><br>
                     <select name="topic" class="text-select">
                         <option value="Young Adult">Young Adult</option>
@@ -79,14 +87,16 @@
                         <option value="Education">Education</option>
                     </select>
                 </div>
-                <div>
-                    <a href="Products.html" class="button">Add Product</a>
-                </div>
+                <button type="submit" onclick="addProduct()" class="button">Add Product</button>
             </form>
         </div>
     </div>
+    <script>
+        function addProduct(){
+            alert("Added Product Successfully");
+        }
+    </script>
     <!--End Main Content-->
-    
 </div>
 <!--End Main-->
 </body>

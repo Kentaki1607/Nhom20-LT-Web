@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--Start Header-->
+<header>
+
+</header>
+<!--End Header-->
+
+<!--Start Main-->
+<div class="admin-wrapper">
+
+    <!--Start Menu Bar-->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><img src="assets/images/Peroro.png" alt="account" class="round-img"></span>
+                    <span class="title">Admin</span>
+                    <span class="icon" style="text-align: start;"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <span class="icon"><i class="fa fa-archive" aria-hidden="true"></i></span>
+                    <span class="title">Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                    <span class="title">Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="title">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--End Menu Bar-->
+
+    <!--Start Main Content-->
+    <div class="admin-content">
+        <div class="button-manage">
+            <a class="button" href="Products.html">Manage Products</a>
+        </div>
+        <div class="content">
+            <h2 class="page-title">Edit Product</h2>
+            <form action="Products.html" method="post">
+                <div class="block-input">
+                    <div class="current" style="display: flex;">
+                        <label for="img" style="display: block; padding: 60px 15px 60px 0;">Current Image:</label>
+                        <img src="assets/images/ngamhoa.webp" alt="ngamhoa" style="width: 150px; height: 150px; display: block;">
+                    </div>
+                    <div class="new">
+                        <label for="img">New Image:</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+                </div>
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current Title</label>
+                        <input type="text" name="Current-title" placeholder="Ra bờ suối ngắm hoa kèn hồng" class="text-input" disabled>
+                    </div>
+                    <div class="new">
+                        <label>New Title</label><br>
+                        <input type="text" name="new-title" class="text-input">
+                    </div>
+                </div>
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current Author</label><br>
+                        <input type="text" name="new-author" placeholder="Nguyễn Nhật Ánh" class="text-input" disabled>
+                    </div>
+                    <div class="new">
+                        <label>New Author</label><br>
+                        <input type="text" name="new-author" class="text-input">
+                    </div>
+                </div>
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current Price</label><br>
+                        <input type="text" name="new-price" placeholder="170.000đ" class="text-input" disabled>
+                    </div>
+                    <div class="new">
+                        <label>New Price</label><br>
+                        <input type="text" name="new-price" class="text-input">
+                    </div>
+                </div>
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current Body</label><br>
+                        <textarea name="current-body" placeholder=
+"Thông tin chi tiết về Sản phẩm
+Tác giả:            Nguyễn Nhật Ánh
+NXB:                Nhà xuất bản Trẻ
+Năm XB:          2019
+Ngôn Ngữ:      Tiếng Việt
+Kích thước:      12.6 x 17.8 x 2 cm
+Số trang:          188
+Hình thức:        Bìa mềm"
+                        class="text-body" disabled></textarea>
+                    </div>
+                    <div class="new">
+                        <label>New Body</label><br>
+                        <textarea name="new-body" class="text-body"></textarea>
+                    </div>
+                </div>
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current Topic</label><br>
+                        <select name="current-topic" class="text-select" disabled>
+                            <option value="Young Adult">Young Adult</option>
+                            <option value="Art">Art</option>
+                            <option value="Religious">Religious</option>
+                            <option value="Education">Education</option>
+                        </select>
+                    </div>
+                    <div class="new">
+                        <label>New Topic</label><br>
+                        <select name="new-topic" class="text-select">
+                            <option value="Young Adult">Young Adult</option>
+                            <option value="Art">Art</option>
+                            <option value="Religious">Religious</option>
+                            <option value="Education">Education</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" onclick="editProduct()" class="button">Save</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function editProduct(){
+            alert("Edited Product Successfully");
+        }
+    </script>
+    <!--End Main Content-->
+</div>
+<!--End Main-->
+</body>
+</html>
