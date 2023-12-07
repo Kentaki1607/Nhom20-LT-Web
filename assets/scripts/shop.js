@@ -212,10 +212,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function handleSearch() {
+        event.preventDefault(); 
         currentPage = 1;
         displayProducts(currentPage, searchInput.value);
     }
-
+    
+    searchButton.addEventListener('click', handleSearch);
     paginationElement.addEventListener('click', handlePaginationClick);
     searchButton.addEventListener('click', handleSearch);
     // Hiển thị sản phẩm trang đầu tiên khi trang web được tải
