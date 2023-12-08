@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--Start Header-->
+<header>
+
+</header>
+<!--End Header-->
+
+<!--Start Main-->
+<div class="admin-wrapper">
+
+    <!--Start Menu Bar-->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><img src="assets/images/Peroro.png" alt="account" class="round-img"></span>
+                    <span class="title">Admin</span>
+                    <span class="icon" style="text-align: start;"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <span class="icon"><i class="fa fa-archive" aria-hidden="true"></i></span>
+                    <span class="title">Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="Users.html">
+                    <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                    <span class="title">Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" onclick="LogOut()">
+                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="title">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--End Menu Bar-->
+
+    <!--Start Main Content-->
+    <div class="admin-content">
+        <div class="button-manage">
+            <a class="button" href="Users.html">Manage Users</a>
+        </div>
+        <div class="content">
+            <h2 class="page-title">Edit User</h2>
+            <form action="Users.html" method="post">
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current user's name</label>
+                        <input type="text" name="current-username" placeholder="Nguyễn Ðức Toàn" class="text-input" disabled>
+                    </div>
+                    <div class="new">
+                        <label>New user's name</label><br>
+                        <input type="text" name="new-username" class="text-input">
+                    </div>
+                </div>
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current email</label>
+                        <input type="text" name="current-email" placeholder="sadaharu@gmail.com" class="text-input" disabled>
+                    </div>
+                    <div class="new">
+                        <label>New Email</label><br>
+                        <input type="text" name="new-email" class="text-input">
+                    </div>
+                </div>
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current phone</label>
+                        <input type="text" name="current-phone" placeholder="0839304818" class="text-input" disabled>
+                    </div>
+                    <div class="new">
+                        <label>New phone</label><br>
+                        <input type="text" name="new-phone" class="text-input">
+                    </div>
+                </div>
+                <div class="block-input">
+                    <div class="current">
+                        <label>Current address</label>
+                        <input type="text" name="current-address" placeholder="58B Tran Quoc Toan Street, Hoan Kiem District, Hanoi" class="text-input" disabled>
+                    </div>
+                    <div class="new">
+                        <label>New address</label><br>
+                        <input type="text" name="new-address" class="text-input">
+                    </div>
+                </div>
+                <button type="submit" onclick="editUser()" class="button">Save</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function editUser(){
+            alert("Edited User Successfully");
+        }
+        function LogOut(){
+            alert("Log out successfully")
+        }
+    </script>
+    <!--End Main Content-->
+</div>
+<!--End Main-->
+</body>
+</html>

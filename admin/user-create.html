@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--Start Header-->
+<header>
+
+</header>
+<!--End Header-->
+
+<!--Start Main-->
+<div class="admin-wrapper">
+
+    <!--Start Menu Bar-->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><img src="assets/images/Peroro.png" alt="account" class="round-img"></span>
+                    <span class="title">Admin</span>
+                    <span class="icon" style="text-align: start;"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <span class="icon"><i class="fa fa-archive" aria-hidden="true"></i></span>
+                    <span class="title">Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="Users.html">
+                    <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                    <span class="title">Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" onclick="LogOut()">
+                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="title">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--End Menu Bar-->
+
+    <!--Start Main Content-->
+    <div class="admin-content">
+        <div class="button-manage">
+            <a class="button" href="Users.html">Manage Users</a>
+        </div>
+        <div class="content">
+            <h2 class="page-title">Add User</h2>
+            <form action="Users.html" method="post">
+                <div class="block-input">
+                    <div>
+                        <label >ID:</label>
+                        <input type="text" name="ID" placeholder="8" style="width:35px; height: 30px; text-align: center;" disabled>
+                    </div>
+                </div>
+                <div class="block-input">
+                    <label>User's name</label><br>
+                    <input type="text" name="username" class="text-input">
+                </div>
+                <div class="block-input">
+                    <label>Email</label><br>
+                    <input type="text" name="email" class="text-input">
+                </div>
+                <div class="block-input">
+                    <label>Phone</label><br>
+                    <input type="text" name="phone" class="text-input">
+                </div>
+                <div class="block-input">
+                    <label>Address</label><br>
+                    <input type="text" name="address" class="text-input">
+                </div>
+                <button type="submit" onclick="addUser()" class="button">Add User</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function addUser(){
+            alert("Added User Successfully");
+        }
+        function LogOut(){
+            alert("Log out successfully")
+        }
+    </script>
+    <!--End Main Content-->
+</div>
+<!--End Main-->
+</body>
+</html>
