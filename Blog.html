@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="icon" type="images/x-icon" href="./assets/images/booklogo.jpg">
+	<link rel="icon" type="images/x-icon" href="./assets/images/booklogo.jpg">
+
+    <link rel="stylesheet" href="./assets/styles/base/reset.css">
+    <link rel="stylesheet" href="./assets/styles/base/root.css">
+    <link rel="stylesheet" href="./assets/styles/base/style.css">
+    <link rel="stylesheet" href="./assets/styles/libs/slick-theme.css">
+    <link rel="stylesheet" href="./assets/styles/libs/slick.css">
+    <link rel="stylesheet" href="./assets/styles/fontawesom/all.min.css">
+    <link rel="stylesheet" href="./assets/styles/base/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+       .blog{
+        background-color: #f5f5f5;
+        text-align: center;
+        padding-left: 80px; 
+        padding-bottom: 60px;
+       } 
+
+       img{
+        width: 70%;
+        border-radius: 3px;
+       }
+
+       h2{
+        font-size: 30px;
+        color: rgb(60, 60, 56);
+       }
+
+        p{
+        font-size: 18px;
+        text-align: left;
+        padding-left: 10px;
+        color: #3c3838;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+       button{
+        background-color: blanchedalmond;
+       }
+       button:hover{
+        background-color: #df9e6a;
+        font-weight: 600;
+       }
+
+       .post-actions{
+        padding-left: 20px;
+        padding-bottom: 10px;
+       }
+       .container-blog {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        text-align: center;
+        background-color: rgb(234, 231, 237);
+        border: 1px solid rgb(117, 113, 113);
+        box-shadow: 3px 3px 9px #56524f; 
+        width: 90%;
+        
+       }
+    </style>
+
+    <script src="./assets/styles/libs/jquery.js"></script>
+    <script src="./assets/styles/libs/slick.min.js"></script>
+    <script src="./assets/scripts/shop.js"></script>
+    
+    
+</head>
+<body>
+  <!-- Start Header -->
+    <header>
+        <div class="in-wrap">
+            <div class="header-1">
+                <div class="in-wrap container flex align-items-center">
+                    <div class="part-1">
+                        <nav class="1"><a href="">Checkout</a></nav>
+                        <nav class="2">
+                            <a href="./cart.html">Cart<svg width="35px" height="32px" viewBox="0 -0.5 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.3147 30.9442C11.9424 30.9442 13.2618 29.6247 13.2618 27.9971C13.2618 26.3695 11.9424 25.05 10.3147 25.05C8.68712 25.05 7.36768 26.3695 7.36768 27.9971C7.36768 29.6247 8.68712 30.9442 10.3147 30.9442Z" fill="#ff0000"></path> <path d="M26.5232 30.9442C28.1509 30.9442 29.4703 29.6247 29.4703 27.9971C29.4703 26.3695 28.1509 25.05 26.5232 25.05C24.8956 25.05 23.5762 26.3695 23.5762 27.9971C23.5762 29.6247 24.8956 30.9442 26.5232 30.9442Z" fill="#ff0000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M30.526 5.89412H7.44717L6.60911 2.28116C6.45421 1.61335 6.1084 1.0662 5.57167 0.63972C5.03494 0.21324 4.42381 0 3.73827 0H1.47353C0.659722 0 0 0.659722 0 1.47353C0 2.28733 0.659722 2.94706 1.47353 2.94706H3.73827L4.42186 5.89412H4.42059L8.21564 22.4326C8.29244 22.7673 8.46515 23.0416 8.73378 23.2556C9.0024 23.4695 9.30842 23.5765 9.65183 23.5765H26.8066C27.1441 23.5765 27.4459 23.4728 27.7121 23.2654C27.9783 23.0581 28.1527 22.7908 28.2354 22.4635L31.9547 7.72829C32.0103 7.50802 32.0147 7.28674 31.968 7.06443C31.9212 6.84212 31.828 6.64136 31.6884 6.46214C31.5488 6.28293 31.377 6.14345 31.1728 6.04372C30.9688 5.94399 30.7532 5.89412 30.526 5.89412Z" fill="url(#paint0_linear_103_1445)"></path> <g style="mix-blend-mode:hard-light"> <g style="mix-blend-mode:hard-light"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8.95667 10.7179C8.94284 10.661 8.93245 10.6034 8.91504 10.5453C8.91504 10.4871 8.91504 10.4287 8.91504 10.3701C8.91504 9.96323 9.0589 9.61592 9.34663 9.32819C9.63435 9.04047 9.98167 8.89661 10.3886 8.89661C10.7285 8.89661 11.0321 9.00165 11.2993 9.21174C11.5665 9.42183 11.7402 9.69203 11.8205 10.0224L13.9565 18.817L13.9567 18.8175C13.9705 18.8744 13.9809 18.932 13.9878 18.9901C13.9948 19.0483 13.9983 19.1067 13.9983 19.1653C13.9983 19.5722 13.8544 19.9195 13.5667 20.2072C13.279 20.4949 12.9317 20.6388 12.5248 20.6388C12.1848 20.6388 11.8813 20.5338 11.614 20.3237C11.3468 20.1136 11.1731 19.8434 11.0929 19.5131L8.95667 10.7179ZM17.6405 10.059C17.5603 9.72864 17.3865 9.45844 17.1193 9.24835C16.8521 9.03826 16.5485 8.93321 16.2086 8.93321C15.8017 8.93321 15.4544 9.07707 15.1666 9.3648C14.8789 9.65252 14.7351 9.99984 14.7351 10.4067C14.7351 10.4653 14.7385 10.5237 14.7455 10.5819C14.7525 10.64 14.7629 10.6976 14.7767 10.7545L16.9129 19.5497C16.9931 19.88 17.1668 20.1502 17.4341 20.3603C17.7013 20.5704 18.0049 20.6754 18.3448 20.6754C18.7517 20.6754 19.099 20.5315 19.3867 20.2438C19.6744 19.9561 19.8183 19.6088 19.8183 19.2019C19.8183 19.1433 19.8148 19.0849 19.8079 19.0267C19.8009 18.9686 19.7905 18.911 19.7767 18.8541L19.7766 18.8536L17.6405 10.059Z" fill="white" fill-opacity="0.6"></path> </g> </g> <defs> <linearGradient id="paint0_linear_103_1445" x1="0" y1="0" x2="19.7144" y2="29.6608" gradientUnits="userSpaceOnUse"> <stop stop-color="#ff0000"></stop> <stop offset="1" stop-color="#ff0000"></stop> </linearGradient> </defs> </g></svg></a>
+                            <a href="./login.html">Log in</a>
+                        </nav>
+                    </div>
+                    <div class="part-2 flex align-items-center">
+                        <img class="logo" src="./assets/images/logo.webp" alt="">
+                        <a href="./index.html" style="outline: none;">Home</a>
+                        <a href="./Shop.html" style="outline: none;">Shop</a>
+                        <a href="./Blog.html" style="outline: none;">Blog</a> 
+                        <a href="./Contact US.html" style="outline: none;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header  -->
+    <main style="display: flex">
+        <section class="blog" style="flex-basis: 75%">
+            <h1 style="color: rgb(134, 144, 144); font-weight: 700">My Blog</h1>
+              <article class ="blog-post">   
+                <div  class="container-blog">
+                    <h2>Mystery And Mayhem</h2>
+                    <img src="./assets/images/blog1.jpg" alt="Ảnh sách">
+                    <p  style="text-align: center;color:rgb(78, 80, 82)" class ="post-meta">Posted on <span class="post-date">Oct,10,2023</span> by <span class="author">Itoshi Sae</span></p>
+                    <p class="post-content">Welcome to the second stop on the blog tour for Mystery & Mayhem: Twelve Deliciously Intriguing Mysteries, a collection of crime short stories by some of my favourite authors. For my stop on the tour, here’s part one of The Crime Club’s favourite childhood mysteries! The book that really got me hooked on mystery was The Murder of Roger Ackroyd by Agatha Christie. My father gave me a copy when I was 12 and challenged me to solve it.</p>
+
+                    <div class="post-actions">
+                        <button class="like-btn"><svg fill="#000000" width="26px" height="26px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M26.996 12.898c-.064-2.207-1.084-4.021-2.527-5.13-1.856-1.428-4.415-1.69-6.542-.132-.702.516-1.359 1.23-1.927 2.168-.568-.938-1.224-1.652-1.927-2.167-2.127-1.559-4.685-1.297-6.542.132-1.444 1.109-2.463 2.923-2.527 5.13-.035 1.172.145 2.48.788 3.803 1.01 2.077 5.755 6.695 10.171 10.683l.035.038.002-.002.002.002.036-.038c4.415-3.987 9.159-8.605 10.17-10.683.644-1.323.822-2.632.788-3.804z"></path></g></svg></button>
+                        <button class="comment-btn"><svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>comment 3</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-207.000000, -257.000000)" fill="#000000"> <path d="M231,273 C229.896,273 229,272.104 229,271 C229,269.896 229.896,269 231,269 C232.104,269 233,269.896 233,271 C233,272.104 232.104,273 231,273 L231,273 Z M223,273 C221.896,273 221,272.104 221,271 C221,269.896 221.896,269 223,269 C224.104,269 225,269.896 225,271 C225,272.104 224.104,273 223,273 L223,273 Z M215,273 C213.896,273 213,272.104 213,271 C213,269.896 213.896,269 215,269 C216.104,269 217,269.896 217,271 C217,272.104 216.104,273 215,273 L215,273 Z M223,257 C214.164,257 207,263.269 207,271 C207,275.419 209.345,279.354 213,281.919 L213,289 L220.009,284.747 C220.979,284.907 221.977,285 223,285 C231.836,285 239,278.732 239,271 C239,263.269 231.836,257 223,257 L223,257 Z" id="comment-3" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg></button>
+                        <button class="share-btn"><svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd12b5bb"> <path style="display: inline;" d="M505.705,421.851c0,49.528-40.146,89.649-89.637,89.649c-49.527,0-89.662-40.121-89.662-89.649 c0-1.622,0.148-3.206,0.236-4.815l-177.464-90.474c-14.883,11.028-33.272,17.641-53.221,17.641 c-49.528,0-89.662-40.134-89.662-89.649s40.134-89.649,89.662-89.649c22.169,0,42.429,8.097,58.086,21.433l172.774-88.09 c-0.25-2.682-0.412-5.364-0.412-8.097c0-49.503,40.135-89.649,89.662-89.649c49.49,0,89.637,40.146,89.637,89.649 c0,49.516-40.146,89.65-89.637,89.65c-22.082,0-42.242-8.009-57.861-21.221l-172.999,88.215c0.224,2.558,0.387,5.14,0.387,7.76 c0,4.653-0.474,9.182-1.148,13.648l171.389,87.379c15.92-14.472,37.004-23.379,60.232-23.379 C465.559,332.201,505.705,372.348,505.705,421.851z"> </path> </g> </g></svg></button>
+                    </div>
+                </div>
+                <div  class="container-blog">
+                    <h2>Behold The Pretty Books</h2>
+                    <img src="./assets/images/blog2.jpg" alt="Ảnh sách">
+                    <p   style="text-align: center; color:rgb(78, 80, 82)" class ="post-meta">Posted on <span class="post-date">Dec,24,2019</span> by <span class="author">Anna</span></p>
+                    <p class="post-content">I received an exciting mix of books from publishers in December: My Favourite Manson Girl, Night wanderers,  Mystery & Mayhem, You Know Me Well, London Belongs to Us, The Moonlight Dreamers and The Square Root of Summer. I love book post and the surprises that come with them, including a magnifying glass and London bus pin!</p>
+                    <div class="post-actions">
+                        <button class="like-btn"><svg fill="#000000" width="26px" height="26px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M26.996 12.898c-.064-2.207-1.084-4.021-2.527-5.13-1.856-1.428-4.415-1.69-6.542-.132-.702.516-1.359 1.23-1.927 2.168-.568-.938-1.224-1.652-1.927-2.167-2.127-1.559-4.685-1.297-6.542.132-1.444 1.109-2.463 2.923-2.527 5.13-.035 1.172.145 2.48.788 3.803 1.01 2.077 5.755 6.695 10.171 10.683l.035.038.002-.002.002.002.036-.038c4.415-3.987 9.159-8.605 10.17-10.683.644-1.323.822-2.632.788-3.804z"></path></g></svg></button>
+                        <button class="comment-btn"><svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>comment 3</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-207.000000, -257.000000)" fill="#000000"> <path d="M231,273 C229.896,273 229,272.104 229,271 C229,269.896 229.896,269 231,269 C232.104,269 233,269.896 233,271 C233,272.104 232.104,273 231,273 L231,273 Z M223,273 C221.896,273 221,272.104 221,271 C221,269.896 221.896,269 223,269 C224.104,269 225,269.896 225,271 C225,272.104 224.104,273 223,273 L223,273 Z M215,273 C213.896,273 213,272.104 213,271 C213,269.896 213.896,269 215,269 C216.104,269 217,269.896 217,271 C217,272.104 216.104,273 215,273 L215,273 Z M223,257 C214.164,257 207,263.269 207,271 C207,275.419 209.345,279.354 213,281.919 L213,289 L220.009,284.747 C220.979,284.907 221.977,285 223,285 C231.836,285 239,278.732 239,271 C239,263.269 231.836,257 223,257 L223,257 Z" id="comment-3" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg></button>
+                        <button class="share-btn"><svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd12b5bb"> <path style="display: inline;" d="M505.705,421.851c0,49.528-40.146,89.649-89.637,89.649c-49.527,0-89.662-40.121-89.662-89.649 c0-1.622,0.148-3.206,0.236-4.815l-177.464-90.474c-14.883,11.028-33.272,17.641-53.221,17.641 c-49.528,0-89.662-40.134-89.662-89.649s40.134-89.649,89.662-89.649c22.169,0,42.429,8.097,58.086,21.433l172.774-88.09 c-0.25-2.682-0.412-5.364-0.412-8.097c0-49.503,40.135-89.649,89.662-89.649c49.49,0,89.637,40.146,89.637,89.649 c0,49.516-40.146,89.65-89.637,89.65c-22.082,0-42.242-8.009-57.861-21.221l-172.999,88.215c0.224,2.558,0.387,5.14,0.387,7.76 c0,4.653-0.474,9.182-1.148,13.648l171.389,87.379c15.92-14.472,37.004-23.379,60.232-23.379 C465.559,332.201,505.705,372.348,505.705,421.851z"> </path> </g> </g></svg></button>
+                    </div>
+                </div>
+                <div class="container-blog">
+                    <h2>Read The Book Of Course</h2>
+                    <img src="./assets/images/blog3.jpg" alt="Ảnh sách">
+                    <p  style="text-align: center;color:rgb(78, 80, 82)" class ="post-meta">Posted on <span class="post-date">Oct,10,2023</span> by <span class="author">Itoshi Sae</span></p>
+                    <p class="post-content">No matter what we do in life, a clear strategy always will always boost your chances of success tenfold. Whether that be running a business, running a marathon, or running for president, it’s important to have clear steps on exactly how you will achieve this. And what better way to do that than reading a book. The font of all knowledge can be found across millions of pages, and luckily for you we’ve narrowed it down to five titles that’ll see you a poker-playing, Entrepreneurial, fitness-freak in no time.</p>
+                    <div class="post-actions">
+                        <button class="like-btn"><svg fill="#000000" width="26px" height="26px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M26.996 12.898c-.064-2.207-1.084-4.021-2.527-5.13-1.856-1.428-4.415-1.69-6.542-.132-.702.516-1.359 1.23-1.927 2.168-.568-.938-1.224-1.652-1.927-2.167-2.127-1.559-4.685-1.297-6.542.132-1.444 1.109-2.463 2.923-2.527 5.13-.035 1.172.145 2.48.788 3.803 1.01 2.077 5.755 6.695 10.171 10.683l.035.038.002-.002.002.002.036-.038c4.415-3.987 9.159-8.605 10.17-10.683.644-1.323.822-2.632.788-3.804z"></path></g></svg></button>
+                        <button class="comment-btn"><svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>comment 3</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-207.000000, -257.000000)" fill="#000000"> <path d="M231,273 C229.896,273 229,272.104 229,271 C229,269.896 229.896,269 231,269 C232.104,269 233,269.896 233,271 C233,272.104 232.104,273 231,273 L231,273 Z M223,273 C221.896,273 221,272.104 221,271 C221,269.896 221.896,269 223,269 C224.104,269 225,269.896 225,271 C225,272.104 224.104,273 223,273 L223,273 Z M215,273 C213.896,273 213,272.104 213,271 C213,269.896 213.896,269 215,269 C216.104,269 217,269.896 217,271 C217,272.104 216.104,273 215,273 L215,273 Z M223,257 C214.164,257 207,263.269 207,271 C207,275.419 209.345,279.354 213,281.919 L213,289 L220.009,284.747 C220.979,284.907 221.977,285 223,285 C231.836,285 239,278.732 239,271 C239,263.269 231.836,257 223,257 L223,257 Z" id="comment-3" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg></button>
+                        <button class="share-btn"><svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd12b5bb"> <path style="display: inline;" d="M505.705,421.851c0,49.528-40.146,89.649-89.637,89.649c-49.527,0-89.662-40.121-89.662-89.649 c0-1.622,0.148-3.206,0.236-4.815l-177.464-90.474c-14.883,11.028-33.272,17.641-53.221,17.641 c-49.528,0-89.662-40.134-89.662-89.649s40.134-89.649,89.662-89.649c22.169,0,42.429,8.097,58.086,21.433l172.774-88.09 c-0.25-2.682-0.412-5.364-0.412-8.097c0-49.503,40.135-89.649,89.662-89.649c49.49,0,89.637,40.146,89.637,89.649 c0,49.516-40.146,89.65-89.637,89.65c-22.082,0-42.242-8.009-57.861-21.221l-172.999,88.215c0.224,2.558,0.387,5.14,0.387,7.76 c0,4.653-0.474,9.182-1.148,13.648l171.389,87.379c15.92-14.472,37.004-23.379,60.232-23.379 C465.559,332.201,505.705,372.348,505.705,421.851z"> </path> </g> </g></svg></button>
+                    </div>
+                </div>
+        </article>
+        </section>
+        <section class="form-conclusion">
+            <div class="in-wrap">
+                <div class="example" >
+                    <input id="searchInput" class="search" type="text" placeholder="Tìm Kiếm..." name="tìm kiếm">
+                    <a href="./SearchResult.html"><i id="searchButton" class="fa fa-search"></i></a>
+                </div>
+                <div class="coclusion">
+                    <div>
+                    <ul style=" padding: 3rem 0; font-size: 30px; color:rgb(137, 132, 132); font-family:'Times New Roman', Times, serif">Recent Post
+                        <li>Mystery And Mayhem</li>
+                        <li>Behold The Pretty Books</li>
+                        <li>A Perfectly Arranged Library</li>
+                        <li>Read The Book Of Coure</li>
+                    </ul></div>
+                    
+                    <div>
+                        <ul style=" padding: 2rem 0; font-size: 30px; color:rgb(137, 132, 132); font-family:'Times New Roman', Times, serif">Categories
+                        <li>Course Book</li>
+                        <li>Library</li>
+                        <li>Novel</li>
+                        <li>Thriller</li>
+                    </ul>
+                </div>    
+            </div>
+        </section>
+    </main>
+    <div class="pagination-box">
+        <div class="pagination" id="pagination">
+            <!-- javascript  -->
+        </div>
+    </div>
+        <!-- Start Footer  -->
+        <footer>
+            <div class="in-wrap">
+                <div class="main-footer-2">
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/"><svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3 v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2 c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"></path> </g></svg></a>
+                        <a href="https://twitter.com/"><svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M215.2,361.2 c0.1,2.2,0.1,4.5,0.1,6.8c0,69.5-52.9,149.7-149.7,149.7c-29.7,0-57.4-8.7-80.6-23.6c4.1,0.5,8.3,0.7,12.6,0.7 c24.6,0,47.3-8.4,65.3-22.5c-23-0.4-42.5-15.6-49.1-36.5c3.2,0.6,6.5,0.9,9.9,0.9c4.8,0,9.5-0.6,13.9-1.9 C13.5,430-4.6,408.7-4.6,383.2v-0.6c7.1,3.9,15.2,6.3,23.8,6.6c-14.1-9.4-23.4-25.6-23.4-43.8c0-9.6,2.6-18.7,7.1-26.5 c26,31.9,64.7,52.8,108.4,55c-0.9-3.8-1.4-7.8-1.4-12c0-29,23.6-52.6,52.6-52.6c15.1,0,28.8,6.4,38.4,16.6 c12-2.4,23.2-6.7,33.4-12.8c-3.9,12.3-12.3,22.6-23.1,29.1c10.6-1.3,20.8-4.1,30.2-8.3C234.4,344.5,225.5,353.7,215.2,361.2z"></path> </g></svg></a>
+                        <a href="https://google.com"><svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" width="50px" height="50px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;} </style> <path d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M9.1,16c-2.2,0-4-1.8-4-4s1.8-4,4-4c1,0,2,0.4,2.7,1.1 l-1.1,1.1c-0.4-0.4-1-0.6-1.6-0.6c-1.3,0-2.4,1.1-2.4,2.4s1.1,2.4,2.4,2.4c1.1,0,1.9-0.7,2.2-1.6H9.1v-1.5h3.8 C13.2,12.9,12.5,16,9.1,16z M17.4,12.7v1.4H16v-1.4h-1.4v-1.4H16V9.9h1.4v1.4h1.4v1.4C18.8,12.7,17.4,12.7,17.4,12.7z"></path> <rect class="st0" width="24" height="24"></rect> </g></svg></a>
+                        <a href="https://rss.com/"><svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M43.1,518.7 c-6.2,6.2-14.7,9.9-24.1,9.9c-9.4,0-17.8-3.8-24-9.9c-6.2-6.2-10-14.6-10-23.9c0-9.4,3.8-17.8,10-24s14.6-10,24-10 c9.4,0,17.9,3.8,24,10c6.2,6.2,10,14.6,10,24C53,504.2,49.2,512.6,43.1,518.7z M104.8,529c-0.1-32.1-12.5-62.3-35.1-84.9 c-22.6-22.6-52.8-35.2-84.7-35.2V360c46.6,0,88.7,19,119.3,49.6c30.6,30.6,49.5,72.8,49.6,119.4H104.8z M192,529 c-0.1-114.2-92.8-207.1-206.9-207.1V273c70.6,0,134.5,28.7,180.8,75.1c46.3,46.4,75,110.3,75.1,180.9H192z"></path> </g></svg></a>
+                        <a href="https://www.pinterest.com/"><svg fill="#000000" width="43px" height="43px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm.657 11.875c-.616-.047-.874-.352-1.356-.644-.265 1.391-.589 2.725-1.549 3.422-.297-2.104.434-3.682.774-5.359-.579-.975.069-2.936 1.291-2.454 1.503.596-1.302 3.625.581 4.004 1.966.394 2.769-3.412 1.55-4.648-1.762-1.787-5.127-.041-4.713 2.517.1.625.747.815.258 1.678-1.127-.25-1.464-1.139-1.42-2.324.069-1.94 1.743-3.299 3.421-3.486 2.123-.236 4.115.779 4.391 2.777.309 2.254-.959 4.693-3.228 4.517z"></path></g></svg></a>
+        
+                    </div>
+                    <div class="footer-copyright">
+                        &copy; 2023 Your Website Name. All rights reserved.
+                    </div>
+                </div>
+                </div>
+            </section>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+        $('.slider').slick({
+            // biến toàn cục
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            dots: true,
+            // responsive
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 760,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                    }
+                },
+               
+            ]
+        });
+    </script> 
+</body>
+</html>
+    
+
+
