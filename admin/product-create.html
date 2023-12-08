@@ -35,13 +35,13 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="Users.html">
                     <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
                     <span class="title">Users</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="index.html" onclick="LogOut()">
                     <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
                     <span class="title">Log out</span>
                 </a>
@@ -58,6 +58,12 @@
         <div class="content">
             <h2 class="page-title">Add Product</h2>
             <form action="Products.html" method="post">
+                <div class="block-input">
+                    <div>
+                        <label >SN:</label>
+                        <input type="text" name="SN" placeholder="25" style="width:35px; height: 30px; text-align: center;" disabled>
+                    </div>
+                </div>
                 <div class="block-input">
                     <label for="img">Image:</label>
                     <input type="file" id="img" name="img" accept="image/*">
@@ -94,6 +100,9 @@
     <script>
         function addProduct(){
             alert("Added Product Successfully");
+        }
+        function LogOut(){
+            alert("Log out successfully")
         }
     </script>
     <!--End Main Content-->

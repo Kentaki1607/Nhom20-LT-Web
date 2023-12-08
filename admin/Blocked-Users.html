@@ -53,7 +53,7 @@
     <!--Start Main Content-->
     <div class="admin-content">
         <div class="button-group">
-            <a class="button" href="user-create.html">Add User</a>
+            <a class="button" href="create.html">Add User</a>
             <a class="button" href="Users.html">Manage Users</a>
         </div>
         <div class="content">
@@ -75,9 +75,9 @@
                         <td>sadaharu@gmail.com</td>
                         <td>0839304818</td>
                         <td>58B Tran Quoc Toan Street, Hoan Kiem District, Hanoi</td>
-                        <td style="font-weight: 600;">Active</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
-                        <td><a href="Blocked-Users.html" onclick="checkConfirm()" class="block">Block</a></td>
+                        <td style="font-weight: 600;">Blocked</td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><a href="Users.html" onclick="checkConfirm()" class="activate">Activate</a></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -85,9 +85,9 @@
                         <td>sadaharu2@gmail.com</td>
                         <td>0439423946</td>
                         <td>38 Ho Bieu Chanh Street, Ward 11, Phu Nhuan District, Ho Chi Minh City</td>
-                        <td style="font-weight: 600;">Active</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
-                        <td><a href="Blocked-Users.html" onclick="checkConfirm()" class="block">Block</a></td>
+                        <td style="font-weight: 600;">Blocked</td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><a href="Users.html" onclick="checkConfirm()" class="activate">Activate</a></td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -95,9 +95,9 @@
                         <td>sadaharu3@gmail.com</td>
                         <td>0438639488</td>
                         <td>8/5B Cao An Street, Cao An Ward, Hai Duong</td>
-                        <td style="font-weight: 600;">Active</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
-                        <td><a href="Blocked-Users.html" onclick="checkConfirm()" class="block">Block</a></td>
+                        <td style="font-weight: 600;">Blocked</td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><a href="Users.html" onclick="checkConfirm()" class="activate">Activate</a></td>
                     </tr>
                     <tr>
                         <td>4</td>
@@ -105,9 +105,9 @@
                         <td>sadaharu4@gmail.com</td>
                         <td>090571736</td>
                         <td>10/7 Quang Trung Street, Ward 12, Go Vap District, Ho Chi Minh City</td>
-                        <td style="font-weight: 600;">Active</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
-                        <td><a href="Blocked-Users.html" onclick="checkConfirm()" class="block">Block</a></td>
+                        <td style="font-weight: 600;">Blocked</td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><a href="Users.html" onclick="checkConfirm()" class="activate">Activate</a></td>
                     </tr>
                     <tr>
                         <td>5</td>
@@ -115,9 +115,9 @@
                         <td>sadaharu5@gmail.com</td>
                         <td>0905870212</td>
                         <td>157/15A Vuon Lai Street, Phu Tho Hoa Ward, Tan Phu District, Ho Chi Minh City</td>
-                        <td style="font-weight: 600;">Active</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
-                        <td><a href="Blocked-Users.html" onclick="checkConfirm()" class="block">Block</a></td>
+                        <td style="font-weight: 600;">Blocked</td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><a href="Users.html" onclick="checkConfirm()" class="activate">Activate</a></td>
                     </tr>
                     <tr>
                         <td>6</td>
@@ -125,9 +125,9 @@
                         <td>sadaharu6@gmail.com</td>
                         <td>0364632300</td>
                         <td>39/30 Ngoc Ha Street, Ba Dinh District, Hanoi</td>
-                        <td style="font-weight: 600;">Active</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
-                        <td><a href="Blocked-Users.html" onclick="checkConfirm()" class="block">Block</a></td>
+                        <td style="font-weight: 600;">Blocked</td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><a href="Users.html" onclick="checkConfirm()" class="activate">Activate</a></td>
                     </tr>
                     <tr>
                         <td>7</td>
@@ -135,9 +135,9 @@
                         <td>sadaharu7@gmail.com</td>
                         <td>0935591938</td>
                         <td>24C/3 Cach mang thang tam Street, Quang Vinh Ward, Dong Nai</td>
-                        <td style="font-weight: 600;">Active</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
-                        <td><a href="Blocked-Users.html" onclick="checkConfirm()" class="block">Block</a></td>
+                        <td style="font-weight: 600;">Blocked</td>
+                        <td><a href="edit.html" class="edit">Edit</a></td>
+                        <td><a href="Users.html" onclick="checkConfirm()" class="activate">Activate</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -145,7 +145,7 @@
     </div>
     <script>
         function checkConfirm(){
-            if(confirm("Block selected user?")){
+            if(confirm("Activate selected user?")){
                 return true;
             }
             else{

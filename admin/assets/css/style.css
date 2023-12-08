@@ -131,14 +131,22 @@ th, td {
 
 
 .edit {
+    color: blue;
+    border: none;
+}
+.block {
+    color: red;
+    border: none;
+}
+.activate {
     color: green;
     border: none;
 }
-.edit:hover {
+.edit:hover, .block:hover, .activate:hover {
     text-decoration: underline;
 }
 .content table tbody tr td input {
-    color: blue;
+    color: red;
     border: none;
     font-size: 17px;
     cursor: pointer;
