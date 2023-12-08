@@ -60,7 +60,7 @@
         }
 
         .input-submit {
-            width: 70%;
+            width: 100%;
             padding-left: 500px;
             padding-top: 20px;
         }
@@ -135,7 +135,7 @@
                 <input type="text" name="mess" >
             </div>
             <div class="input-submit">
-                <input type="submit" value="Submit Messeger">
+                <input type="submit" onclick="noticeMessageSend()" value="Submit Messeger">
             </div>   
         </section>
         <section class="form-conclusion">
@@ -231,6 +231,9 @@
                
             ]
         });
+        function noticeMessageSend(){
+            alert("message has been sent");
+        }
     </script> 
 </body>
 </html>
