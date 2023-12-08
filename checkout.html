@@ -40,92 +40,130 @@
     </div>
  </header>
 <!-- End Header  -->
-    <main role="main">
-        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
-        <div class="containers mt-4">
-            <div id="thongbao" class="alert alert-danger d-none face" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
+
+<main role="main">
+    <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+    <div class="containers mt-4">
+        <form class="needs-validation" name="frmthanhtoan" method="post"
+            action="#">
+            <input type="hidden" name="kh_tendangnhap" value="dnpcuong">
+
+            <div class="py-5 text-center">
+                <i class="fa fa-credit-card fa-4x" aria-hidden="true"></i>
+                <h2>Thanh toán</h2>
+                <p class="lead">Vui lòng kiểm tra thông tin Khách hàng, thông tin Giỏ hàng trước khi Đặt hàng.</p>
             </div>
 
-            <h1 class="text-center">Giỏ hàng</h1>
             <div class="row">
-                <div class="col col-md-12">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>STT</th>
-                                <th>Ảnh đại diện</th>
-                                <th>Tên sản phẩm</th>
-                                <th>Số lượng</th>
-                                <th>Đơn giá</th>
-                                <th>Thành tiền</th>
-                                <th>Hành động</th>
-                            </tr>
-                        </thead>
-                        <tbody id="datarow">
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <img src="./assets/images/ngamhoa.webp" class="hinhdaidien">
-                                </td>
-                                <td>Ra bờ suối ngắm hoa kèn hồng</td>
-                                <td class="text-right">2</td>
-                                <td class="text-right">170.000đ</td>
-                                <td class="text-right">340.000đ</td>
-                                <td>
-                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
-                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
-                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <img src="./assets/images/muahe.webp" class="hinhdaidien">
-                                </td>
-                                <td>Mùa hè không tên</td>
-                                <td class="text-right">4</td>
-                                <td class="text-right">120.000đ</td>
-                                <td class="text-right">480.000đ</td>
-                                <td>
-                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
-                                    <a id="delete_2" data-sp-ma="6" class="btn btn-danger btn-delete-sanpham">
-                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <img src="./assets/images/daiviet.webp" class="hinhdaidien">
-                                </td>
-                                <td>Đại Việt sử kí toàn thư</td>
-                                <td class="text-right">8</td>
-                                <td class="text-right">250.000đ</td>
-                                <td class="text-right">2.000.000đ</td>
-                                <td>
-                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
-                                    <a id="delete_3" data-sp-ma="4" class="btn btn-danger btn-delete-sanpham">
-                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Giỏ hàng</span>
+                        <span class="badge badge-secondary badge-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <input type="hidden" name="sanphamgiohang[1][sp_ma]" value="2">
+                        <input type="hidden" name="sanphamgiohang[1][gia]" value="11800000.00">
+                        <input type="hidden" name="sanphamgiohang[1][soluong]" value="2">
 
-                    <a href="./index.html" class="btn btn-warning btn-md"><i class="fa fa-arrow-left"
-                        aria-hidden="true"></i>&nbsp;Quay
-                        về trang chủ</a>
-                        <a href="checkout.html" class="btn btn-primary btn-md"><i
-                            class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Ra bờ suối ngắm hoa kèn hồng</h6>
+                                <small class="text-muted">170.000đ x 2</small>
+                            </div>
+                            <span class="text-muted">340.000đ</span>
+                        </li>
+                        <input type="hidden" name="sanphamgiohang[2][sp_ma]" value="4">
+                        <input type="hidden" name="sanphamgiohang[2][gia]" value="14990000.00">
+                        <input type="hidden" name="sanphamgiohang[2][soluong]" value="8">
+
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Mùa hè không tên</h6>
+                                <small class="text-muted">120.000đ x 4</small>
+                            </div>
+                            <span class="text-muted">480.000đ</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Đại Việt sử kí toàn thư</h6>
+                                <small class="text-muted">250.000đ x 8</small>
+                            </div>
+                            <span class="text-muted">2.000.000đ</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Tổng thành tiền</span>
+                            <strong>2.820.000đ</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Thông tin khách hàng</h4>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="kh_ten">Họ tên</label>
+                            <input type="text" class="form-control" name="kh_ten" id="kh_ten"
+                                value="Dương Nguyễn Phú Cường" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="kh_gioitinh">Giới tính</label>
+                            <input type="text" class="form-control" name="kh_gioitinh" id="kh_gioitinh" value="Nam"
+                                readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="kh_diachi">Địa chỉ</label>
+                            <input type="text" class="form-control" name="kh_diachi" id="kh_diachi"
+                                value="130 Xô Viết Nghệ Tỉnh" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="kh_dienthoai">Điện thoại</label>
+                            <input type="text" class="form-control" name="kh_dienthoai" id="kh_dienthoai"
+                                value="0915659223" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="kh_email">Email</label>
+                            <input type="text" class="form-control" name="kh_email" id="kh_email"
+                                value="phucuong@ctu.edu.vn" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="kh_ngaysinh">Ngày sinh</label>
+                            <input type="text" class="form-control" name="kh_ngaysinh" id="kh_ngaysinh"
+                                value="11/6/1989" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="kh_cmnd">CMND</label>
+                            <input type="text" class="form-control" name="kh_cmnd" id="kh_cmnd" value="362209685"
+                                readonly="">
                         </div>
                     </div>
+
+                    <h4 class="mb-3">Hình thức thanh toán</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="httt-1" name="httt_ma" type="radio" class="custom-control-input" required=""
+                                value="1">
+                            <label class="custom-control-label" for="httt-1">Tiền mặt</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="httt-2" name="httt_ma" type="radio" class="custom-control-input" required=""
+                                value="2">
+                            <label class="custom-control-label" for="httt-2">Chuyển khoản</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="httt-3" name="httt_ma" type="radio" class="custom-control-input" required=""
+                                value="3">
+                            <label class="custom-control-label" for="httt-3">Ship COD</label>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <a class="btn btn-primary btn-lg btn-block" href="purchase-history.html" name="btnDatHang">Đặt hàng</a>
                 </div>
-        <!-- End block content -->
-        </main>
+            </div>
+        </form>
+
+    </div>
+    <!-- End block content -->
     <!-- Start Footer  -->
     <footer>
         <div class="footer-icons">
@@ -134,12 +172,13 @@
             <a href="https://google.com"><svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" width="50px" height="50px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;} </style> <path d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M9.1,16c-2.2,0-4-1.8-4-4s1.8-4,4-4c1,0,2,0.4,2.7,1.1 l-1.1,1.1c-0.4-0.4-1-0.6-1.6-0.6c-1.3,0-2.4,1.1-2.4,2.4s1.1,2.4,2.4,2.4c1.1,0,1.9-0.7,2.2-1.6H9.1v-1.5h3.8 C13.2,12.9,12.5,16,9.1,16z M17.4,12.7v1.4H16v-1.4h-1.4v-1.4H16V9.9h1.4v1.4h1.4v1.4C18.8,12.7,17.4,12.7,17.4,12.7z"></path> <rect class="st0" width="24" height="24"></rect> </g></svg></a>
             <a href="https://rss.com/"><svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M43.1,518.7 c-6.2,6.2-14.7,9.9-24.1,9.9c-9.4,0-17.8-3.8-24-9.9c-6.2-6.2-10-14.6-10-23.9c0-9.4,3.8-17.8,10-24s14.6-10,24-10 c9.4,0,17.9,3.8,24,10c6.2,6.2,10,14.6,10,24C53,504.2,49.2,512.6,43.1,518.7z M104.8,529c-0.1-32.1-12.5-62.3-35.1-84.9 c-22.6-22.6-52.8-35.2-84.7-35.2V360c46.6,0,88.7,19,119.3,49.6c30.6,30.6,49.5,72.8,49.6,119.4H104.8z M192,529 c-0.1-114.2-92.8-207.1-206.9-207.1V273c70.6,0,134.5,28.7,180.8,75.1c46.3,46.4,75,110.3,75.1,180.9H192z"></path> </g></svg></a>
             <a href="https://www.pinterest.com/"><svg fill="#000000" width="43px" height="43px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm.657 11.875c-.616-.047-.874-.352-1.356-.644-.265 1.391-.589 2.725-1.549 3.422-.297-2.104.434-3.682.774-5.359-.579-.975.069-2.936 1.291-2.454 1.503.596-1.302 3.625.581 4.004 1.966.394 2.769-3.412 1.55-4.648-1.762-1.787-5.127-.041-4.713 2.517.1.625.747.815.258 1.678-1.127-.25-1.464-1.139-1.42-2.324.069-1.94 1.743-3.299 3.421-3.486 2.123-.236 4.115.779 4.391 2.777.309 2.254-.959 4.693-3.228 4.517z"></path></g></svg></a>
-
+    
         </div>
         <div class="footer-copyright">
             &copy; 2023 Your Website Name. All rights reserved.
         </div>   
     </footer>
     <!-- End Footer -->
+</main>
 </body>
-</html>
+</html>  
