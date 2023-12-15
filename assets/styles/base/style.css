@@ -295,11 +295,26 @@ div.example i:hover {
              End CSS index.html
   =========================================================             */
 .hinhdaidien {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
-
-
+table.deco {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+table.deco tr th {
+    font-weight: 600;
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+table.deco tr td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
 .menu-box{
     display: flex;
     justify-content: center;

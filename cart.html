@@ -76,9 +76,9 @@
                                 <td class="text-right">340.000đ</td>
                                 <td>
                                     <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
-                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
+                                    <button type="button" onclick="SomeDeleteRowFunction(this)" id="delete_1" data-sp-ma="1" class="btn btn-danger btn-delete-sanpham" style="color: black;">
                                         <i class="fa fa-trash" aria-hidden="true"></i> Xóa
-                                    </a>
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
@@ -92,9 +92,9 @@
                                 <td class="text-right">480.000đ</td>
                                 <td>
                                     <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
-                                    <a id="delete_2" data-sp-ma="6" class="btn btn-danger btn-delete-sanpham">
+                                    <button type="button" onclick="SomeDeleteRowFunction(this)" id="delete_2" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham" style="color: black;">
                                         <i class="fa fa-trash" aria-hidden="true"></i> Xóa
-                                    </a>
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
@@ -108,9 +108,9 @@
                                 <td class="text-right">2.000.000đ</td>
                                 <td>
                                     <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
-                                    <a id="delete_3" data-sp-ma="4" class="btn btn-danger btn-delete-sanpham">
+                                    <button type="button" onclick="SomeDeleteRowFunction(this)" id="delete_3" data-sp-ma="3" class="btn btn-danger btn-delete-sanpham" style="color: black;">
                                         <i class="fa fa-trash" aria-hidden="true"></i> Xóa
-                                    </a>
+                                    </button>
                                 </td>
                             </tr>
                         </tbody>
@@ -141,5 +141,19 @@
         </div>   
     </footer>
     <!-- End Footer -->
+
+    <!-- Script -->
+    <script>
+        function SomeDeleteRowFunction(o) {
+            if(confirm("Xóa sản phẩm đã chọn khỏi giỏ hàng?")){
+                var p=o.parentNode.parentNode;
+                p.parentNode.removeChild(p);
+            }
+            else{
+                event.stopPropagation();
+                event.preventDefault();
+            }
+        }
+    </script>
 </body>
 </html>
