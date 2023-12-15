@@ -130,21 +130,7 @@ th, td {
 
 
 
-.edit {
-    color: blue;
-    border: none;
-}
-.block {
-    color: red;
-    border: none;
-}
-.activate {
-    color: green;
-    border: none;
-}
-.edit:hover, .block:hover, .activate:hover {
-    text-decoration: underline;
-}
+
 .content table tbody tr td input {
     color: red;
     border: none;
@@ -154,7 +140,24 @@ th, td {
 .content table tbody tr td input:hover {
     text-decoration: underline;
 }
-
+.edit {
+    color: blue;
+}
+.edit:hover {
+    text-decoration: underline;
+}
+.block, .rejected {
+    background-color: rgb(255, 0, 0, 0.2);
+    color: red;
+}
+.active, .approved {
+    background-color: rgb(0, 128, 0, 0.2);
+    color: green;
+}
+.pending {
+    background-color: rgba(255, 166, 0, 0.2);
+    color: darkorange;
+}
 
 
 .block-input {
@@ -190,4 +193,48 @@ img.round-img{
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: 1px solid #f1f0f0;
+    border-radius: 15%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    color: blue;
+}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display:block;
 }

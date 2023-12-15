@@ -59,137 +59,128 @@
     <!--Start Main Content-->
     <div class="admin-content">
         <div class="button-group">
-            <a class="button" href="user-create.html">Add User</a>
-            <a class="button" href="Users.html">Manage Users</a>
+            <a class="button" href="Orders.html">Manage Orders</a>
         </div>
         <div class="content">
-            <h2 class="page-title">Manage Users</h2>
+            <h2 class="page-title">Manage Orders</h2>
             <table>
                 <thead>
-                    <th>ID</th>
-                    <th>User name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Action</th>
+                    <th>Order ID</th>
+                    <th>Customer name</th>
+                    <th>Method</th>
+                    <th>Amount</th>
+                    <th>Date</th>
                     <th colspan="2">Status</th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
+                        <td>SO-1606070005</td>
                         <td>Nguyễn Ðức Toàn</td>
-                        <td>sadaharu@gmail.com</td>
-                        <td>0839304818</td>
-                        <td>58B Tran Quoc Toan Street, Hoan Kiem District, Hanoi</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
+                        <td>Cash</td>
+                        <td>2.820.000đ</td>
+                        <td>16/12/2023</td>
                         <td>
                             <div class="dropdown">
-                                <button onclick="dropDown(this)" class="dropbtn active">Active</button>
+                                <button onclick="dropDown(this)" class="dropbtn pending">Pending</button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <a onclick="activateUser(this)">Activate User</a>
-                                    <a onclick="blockUser(this)">Block User</a>
+                                    <a onclick="acceptOrder(this)">Accept Order</a>
+                                    <a onclick="rejectOrder(this)">Reject Order</a>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>Đặng Mạnh Thắng</td>
-                        <td>sadaharu2@gmail.com</td>
-                        <td>0439423946</td>
-                        <td>38 Ho Bieu Chanh Street, Ward 11, Phu Nhuan District, Ho Chi Minh City</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
+                        <td>SO-1606070004</td>
+                        <td>Nguyễn Ðức Toàn</td>
+                        <td>Transfer</td>
+                        <td>290.000đ</td>
+                        <td>10/10/2023</td>
                         <td>
                             <div class="dropdown">
-                                <button onclick="dropDown(this)" class="dropbtn active">Active</button>
+                                <button onclick="dropDown(this)" class="dropbtn pending">Pending</button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <a onclick="activateUser(this)">Activate User</a>
-                                    <a onclick="blockUser(this)">Block User</a>
+                                    <a onclick="acceptOrder(this)">Accept Order</a>
+                                    <a onclick="rejectOrder(this)">Reject Order</a>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>Hoàng Bảo Ðịnh</td>
-                        <td>sadaharu3@gmail.com</td>
-                        <td>0438639488</td>
-                        <td>8/5B Cao An Street, Cao An Ward, Hai Duong</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
+                        <td>SO-1606070003</td>
+                        <td>Nguyễn Ðức Toàn</td>
+                        <td>Transfer</td>
+                        <td>310.000đ</td>
+                        <td>25/05/2021</td>
                         <td>
                             <div class="dropdown">
-                                <button onclick="dropDown(this)" class="dropbtn active">Active</button>
+                                <button onclick="dropDown(this)" class="dropbtn pending">Pending</button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <a onclick="activateUser(this)">Activate User</a>
-                                    <a onclick="blockUser(this)">Block User</a>
+                                    <a onclick="acceptOrder(this)">Accept Order</a>
+                                    <a onclick="rejectOrder(this)">Reject Order</a>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>Nguyễn Ngọc Khang</td>
-                        <td>sadaharu4@gmail.com</td>
-                        <td>090571736</td>
-                        <td>10/7 Quang Trung Street, Ward 12, Go Vap District, Ho Chi Minh City</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
+                        <td>SO-1606070002</td>
+                        <td>Nguyễn Ðức Toàn</td>
+                        <td>Cash</td>
+                        <td>120.000đ</td>
+                        <td>01/11/2019</td>
                         <td>
                             <div class="dropdown">
-                                <button onclick="dropDown(this)" class="dropbtn active">Active</button>
+                                <button onclick="dropDown(this)" class="dropbtn pending">Pending</button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <a onclick="activateUser(this)">Activate User</a>
-                                    <a onclick="blockUser(this)">Block User</a>
+                                    <a onclick="acceptOrder(this)">Accept Order</a>
+                                    <a onclick="rejectOrder(this)">Reject Order</a>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>Huỳnh Minh Hùng</td>
-                        <td>sadaharu5@gmail.com</td>
-                        <td>0905870212</td>
-                        <td>157/15A Vuon Lai Street, Phu Tho Hoa Ward, Tan Phu District, Ho Chi Minh City</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
+                        <td>SO-1606070001</td>
+                        <td>Nguyễn Ðức Toàn</td>
+                        <td>Transfer</td>
+                        <td>150.000đ</td>
+                        <td>12/08/2017</td>
                         <td>
                             <div class="dropdown">
-                                <button onclick="dropDown(this)" class="dropbtn active">Active</button>
+                                <button onclick="dropDown(this)" class="dropbtn pending">Pending</button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <a onclick="activateUser(this)">Activate User</a>
-                                    <a onclick="blockUser(this)">Block User</a>
+                                    <a onclick="acceptOrder(this)">Accept Order</a>
+                                    <a onclick="rejectOrder(this)">Reject Order</a>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>Nguyễn Danh Văn</td>
-                        <td>sadaharu6@gmail.com</td>
-                        <td>0364632300</td>
-                        <td>39/30 Ngoc Ha Street, Ba Dinh District, Hanoi</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
+                        <td>SO-1606070000</td>
+                        <td>Nguyễn Ðức Toàn</td>
+                        <td>Cash</td>
+                        <td>260.000đ</td>
+                        <td>25/07/2015</td>
                         <td>
                             <div class="dropdown">
-                                <button onclick="dropDown(this)" class="dropbtn active">Active</button>
+                                <button onclick="dropDown(this)" class="dropbtn pending">Pending</button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <a onclick="activateUser(this)">Activate User</a>
-                                    <a onclick="blockUser(this)">Block User</a>
+                                    <a onclick="acceptOrder(this)">Accept Order</a>
+                                    <a onclick="rejectOrder(this)">Reject Order</a>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>Đinh Sỹ Phú</td>
-                        <td>sadaharu7@gmail.com</td>
-                        <td>0935591938</td>
-                        <td>24C/3 Cach mang thang tam Street, Quang Vinh Ward, Dong Nai</td>
-                        <td><a href="user-edit.html" class="edit">Edit</a></td>
+                        <td>SO-108643</td>
+                        <td>Nguyễn Ðức Toàn</td>
+                        <td>Cash</td>
+                        <td>80.000đ</td>
+                        <td>05/05/2013</td>
                         <td>
                             <div class="dropdown">
-                                <button onclick="dropDown(this)" class="dropbtn active">Active</button>
+                                <button onclick="dropDown(this)" class="dropbtn pending">Pending</button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <a onclick="activateUser(this)">Activate User</a>
-                                    <a onclick="blockUser(this)">Block User</a>
+                                    <a onclick="acceptOrder(this)">Accept Order</a>
+                                    <a onclick="rejectOrder(this)">Reject Order</a>
                                 </div>
                             </div>
                         </td>
@@ -199,6 +190,10 @@
         </div>
     </div>
     <script>
+        function LogOut(){
+            alert("Log out successfully")
+        }
+
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
         function dropDown(o) {
@@ -219,12 +214,11 @@
                 }
             }
         }
-        function blockUser(o){
-            if(confirm("Block this user?")){
+        function acceptOrder(o){
+            if(confirm("Accept this order?")){
                 var p = o.parentNode.previousElementSibling
-                p.innerHTML = "Blocked";
-                p.classList = "dropbtn block";
-                return true;
+                p.innerHTML = "Approved";
+                p.classList = "dropbtn approved";
                 return true;
             }
             else{
@@ -232,20 +226,17 @@
                 event.preventDefault();
             }
         }
-        function activateUser(o){
-            if(confirm("Activate this user?")){
+        function rejectOrder(o){
+            if(confirm("Reject this order?")){
                 var p = o.parentNode.previousElementSibling
-                p.innerHTML = "Active";
-                p.classList = "dropbtn active";
+                p.innerHTML = "Rejected";
+                p.classList = "dropbtn rejected";
                 return true;
             }
             else{
                 event.stopPropagation();
                 event.preventDefault();
             }
-        }
-        function LogOut(){
-            alert("Log out successfully")
         }
     </script>
     <!--End Main Content-->
