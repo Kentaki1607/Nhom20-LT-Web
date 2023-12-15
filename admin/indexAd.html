@@ -53,7 +53,7 @@
         
         
         
-        main .form .btn-login a{
+        main .form .btn-login {
             margin: 0 auto;
             display: block;
             text-decoration: none;
@@ -108,12 +108,33 @@
                 <div class="wrap-btn flex justify-center">
                     <div class="relative overflow-hidden">
                         <button class="btn-login relative" type="submit">
-                           <a href="Products.html">Login</a>
+                           Login
                         </button>
                     </div>
                 </div>
             </form>   
         </section>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('login');
+    
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                const username = this.querySelector('input[name="username"]').value;
+                const password = this.querySelector('input[name="password"]').value;
+    
+                // Thay đổi username và password này với thông tin đăng nhập hợp lệ
+                if (username === 'user' && password === '123') {
+                    // Đúng, chuyển hướng đến Products.html
+                    window.location.href = 'Products.html';
+                } else {
+                    // Sai, hiển thị thông báo lỗi
+                    alert('Tên đăng nhập hoặc mật khẩu không chính xác!');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
