@@ -22,26 +22,27 @@
 </head>
 <body>
   <!-- Start Header -->
-    <header>
-        <div class="in-wrap">
-            <div class="header-1">
-                <div class="in-wrap container flex align-items-center">
-                    <div class="part-1">
-                        <nav class="2">
-                            <a href="./login.html">Log in</a>
-                        </nav>
-                    </div>
-                    <div class="part-2 flex align-items-center">
-                        <img class="logo" src="./assets/images/logo.webp" alt="">
-                        <a href="./index.html" style="outline: none;">Home</a>
-                        <a href="./Shop.html" style="outline: none;">Shop</a>
-                        <a href="./Blog.html" style="outline: none;">Blog</a>
-                        <a href="./Contact US.html" style="outline: none;">Contact Us</a>
-                    </div>
+  <header>
+    <div class="in-wrap">
+        <div class="header-1">
+            <div class="in-wrap container flex align-items-center">
+                <div class="part-1">
+                    
+                    <nav class="2">
+                        <a href="./login.html">Log in</a>
+                    </nav>
+                </div>
+                <div class="part-2 flex align-items-center">
+                    <img class="logo" src="./assets/images/logo.webp" alt="">
+                    <a href="./index.html" style="outline: none;">Home</a>
+                    <a href="./Shop.html" style="outline: none;">Shop</a>
+                    <a href="./Blog.html" style="outline: none;">Blog</a> 
+                    <a href="./Contact US.html" style="outline: none;">Contact Us</a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     <!-- End Header  -->
     
     <main>
@@ -78,50 +79,10 @@
                     </div>
                 </div>
                 <div style=" padding-top: 20px;color: rgb(184, 177, 181); font-size:15px">Bạn chưa có tài khoản?
-                    <a href="">Đăng kí</a></div>
+                    <a href="./Register.html">Đăng kí</a></div>
             </form>
         </section>
-        <section class="form container">
-            <form class="signup-form" id="signupContainer">
-                <p class="title">Sign Up</p>
-                <div class="overflow-hidden inner-wrap">
-                    <div class="wrap-username wrap relative">
-                        <input type="text" placeholder="Username" name="username">
-                    </div>
-                </div>
-                <div class="overflow-hidden inner-wrap">
-                    <div class="wrap-password wrap relative">
-                        <input type="email" placeholder="Email" name="email">
-                    </div>
-                </div>
-                <div class="overflow-hidden inner-wrap">
-                    <div class="wrap-password wrap relative">
-                        <input type="password" placeholder="Enter a password" name="password">
-                    </div>
-                </div>
-                <div class="overflow-hidden inner-wrap">
-                    <div class="wrap-password wrap relative">
-                        <input type="password" placeholder="Enter a password again" name="password">
-                    </div>
-                </div>
-                <div class="wrap-btn flex justify-center">
-                    <div class="relative overflow-hidden">
-                        <button class="btn-signup relative" type="submit">
-                          Sign Up
-                        </button>
-                    </div>
-                </div>
-            </form>
-            <div id="successMessage" class="success-message" style="display: none;">Successfully registered account!</div>
-        </section>
-
-        <script>
-            document.getElementById("signupContainer").addEventListener("submit", function (event) {
-                event.preventDefault();
-                document.getElementById("successMessage").style.display = "block";
-            });
-        </script>   
-        </section>
+        
         <section class="form-conclusion">
             <div class="in-wrap">
                 <div class="example" >
@@ -148,14 +109,6 @@
             </div>
         </section>
     </main>
-    <script>
-        document.getElementById('loginContainer').addEventListener('submit', function(event) {
-            event.preventDefault(); // Ngăn chặn hành động submit mặc định
-    
-            // Chuyển hướng đến trang AfterLogin.html
-            window.location.href = 'AfterLogin.html';
-        });
-    </script>
     <footer>
         <div class="main-footer-2">
             <div class="footer-icons">
