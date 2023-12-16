@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const contentElement = document.getElementById('content');
     const paginationElement = document.querySelector('.pagination');
-    const priceFilterSelect = document.getElementById('price-filter');
-    priceFilterSelect.addEventListener('change', function() {
-        displayProducts(currentPage, currentCategory, this.value);
-    });
+
     const data = [
         {
             image: "./assets/images/ngamhoa.webp",
@@ -60,6 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: "Lean Code",
             price: "280.000đ",
             category: "Education",
+        },
+
+        {
+            image: "./assets/images/toathanh.webp" ,
+            name: "Nỗi nhớ anh hóa một tòa thành",
+            price: "110.000đ",
+            category: "Young Adult",
         },
 
         {
@@ -121,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         {
             image: "./assets/images/giauco.webp",
-            name: "Người giàu có nhất thành...",
+            name: "Người giàu có nhất thành BaByLon",
             price: "90.000",
             category: "Art",
         },
@@ -169,13 +173,6 @@ document.addEventListener('DOMContentLoaded', function () {
             category: "Art"
         },
         
-        {
-            image: "./assets/images/toathanh.webp" ,
-            name: "Nỗi nhớ anh hóa một tòa thành",
-            price: "110.000đ",
-            category: "Young Adult",
-        },
-
         
     ];
     const itemsPerPage = 10;
@@ -198,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function displayProducts(page, category, priceFilter = 'clear') {
+    function displayProducts(page, category) {
         currentCategory = category;
 
         const filteredData = filterProductsByCategory(category);
@@ -219,14 +216,6 @@ document.addEventListener('DOMContentLoaded', function () {
             pageLink.href = '#';
             pageLink.textContent = i;
             paginationElement.appendChild(pageLink);
-        }
-
-        if (priceFilter !== 'clear') {
-            productsToShow.sort((a, b) => {
-                const priceA = parseInt(a.price.replace(/đ/g, '').replace(/\./g, ''));
-                const priceB = parseInt(b.price.replace(/đ/g, '').replace(/\./g, ''));
-                return priceFilter === 'inc' ? priceA - priceB : priceB - priceA;
-            });
         }
     
         const lastPageLink = document.createElement('a');

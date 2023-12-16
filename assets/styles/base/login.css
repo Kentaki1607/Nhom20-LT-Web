@@ -3,7 +3,6 @@ main{
     background:#fff9f9;
     display: flex;
     border-bottom: 1px solid #ddd;
-    justify-content: center;
 }
 main .form{
     margin: 0 5rem;

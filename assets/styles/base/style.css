@@ -291,17 +291,6 @@ div.example i:hover {
     cursor: pointer;
 }
   
-select {
-    background-color: #dbd1cb;
-    border-radius: 0.3rem;
-    margin-left: 4.5rem;
-}
-
-select:hover{
-    background-color: #e5ceb3;
-    transition: all 0.3s ease-in-out;
-    color: #434242;
-}
 /* =========================================================
              End CSS index.html
   =========================================================             */
